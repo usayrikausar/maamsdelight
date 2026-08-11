@@ -1,0 +1,1930 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Maam's Delight — Coklat Tempahan Buatan Tangan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Work+Sans:wght@100..900&family=Fraunces:opsz,wght@9..144,300..900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* Font pairing tokens — Edit Mode swaps these, nothing else needs to change. */
+    --font-display:'Baloo 2', system-ui, sans-serif;
+    --font-body:'Work Sans', system-ui, sans-serif;
+
+    --cream:#FFF8EC;
+    --cream-2:#FFEFCF;
+    --cream-3:#FFE2A8;
+    --cocoa:#3A2313;
+    --cocoa-soft:#7C5C44;
+    --cocoa-faint:#A38B72;
+    --marigold:#FFC93C;
+    --marigold-deep:#E2860A;
+    --marigold-ink:#9A5B00;
+    --indigo:#1FCBB8;
+    --indigo-deep:#0FA391;
+    --indigo-ink:#FFFFFF;
+    --rose:#FF5C8A;
+    --rose-deep:#E23F72;
+    --line: rgba(58,35,19,0.13);
+    --line-soft: rgba(58,35,19,0.07);
+    --shadow: 0 24px 55px -30px rgba(58,35,19,0.5);
+    --shadow-soft: 0 12px 28px -16px rgba(58,35,19,0.35);
+    --surface: #FFFFFF;
+    --ring: rgba(255,92,138,0.55);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --cream:#221510;
+      --cream-2:#2E1D16;
+      --cream-3:#3A251A;
+      --cocoa:#FBEEDF;
+      --cocoa-soft:#E0C7B4;
+      --cocoa-faint:#AB8F79;
+      --marigold:#FFCE55;
+      --marigold-deep:#FFB020;
+      --marigold-ink:#FFDA8A;
+      --indigo:#2BE0CB;
+      --indigo-deep:#12A896;
+      --indigo-ink:#FFFFFF;
+      --rose:#FF7CA3;
+      --rose-deep:#FF5089;
+      --line: rgba(251,238,223,0.16);
+      --line-soft: rgba(251,238,223,0.09);
+      --shadow: 0 24px 55px -26px rgba(0,0,0,0.65);
+      --shadow-soft: 0 12px 28px -14px rgba(0,0,0,0.55);
+      --surface: #2E1D16;
+      --ring: rgba(255,124,163,0.6);
+    }
+  }
+  :root[data-theme="dark"]{
+    --cream:#221510; --cream-2:#2E1D16; --cream-3:#3A251A;
+    --cocoa:#FBEEDF; --cocoa-soft:#E0C7B4; --cocoa-faint:#AB8F79;
+    --marigold:#FFCE55; --marigold-deep:#FFB020; --marigold-ink:#FFDA8A;
+    --indigo:#2BE0CB; --indigo-deep:#12A896; --indigo-ink:#FFFFFF;
+    --rose:#FF7CA3; --rose-deep:#FF5089;
+    --line: rgba(251,238,223,0.16); --line-soft: rgba(251,238,223,0.09);
+    --shadow: 0 24px 55px -26px rgba(0,0,0,0.65); --shadow-soft: 0 12px 28px -14px rgba(0,0,0,0.55);
+    --surface:#2E1D16; --ring: rgba(255,124,163,0.6);
+  }
+  :root[data-theme="light"]{
+    --cream:#FFF8EC; --cream-2:#FFEFCF; --cream-3:#FFE2A8;
+    --cocoa:#3A2313; --cocoa-soft:#7C5C44; --cocoa-faint:#A38B72;
+    --marigold:#FFC93C; --marigold-deep:#E2860A; --marigold-ink:#9A5B00;
+    --indigo:#1FCBB8; --indigo-deep:#0FA391; --indigo-ink:#FFFFFF;
+    --rose:#FF5C8A; --rose-deep:#E23F72;
+    --line: rgba(58,35,19,0.13); --line-soft: rgba(58,35,19,0.07);
+    --shadow: 0 24px 55px -30px rgba(58,35,19,0.5); --shadow-soft: 0 12px 28px -16px rgba(58,35,19,0.35);
+    --surface:#FFFFFF; --ring: rgba(255,92,138,0.55);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--cocoa);
+    font-family:var(--font-body);
+    font-weight:400;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{max-width:100%; display:block;}
+  a{color:inherit;}
+  .container{
+    width:100%;
+    max-width:1160px;
+    margin:0 auto;
+    padding:0 24px;
+  }
+  h1,h2,h3{
+    font-family:var(--font-display);
+    font-weight:700;
+    margin:0;
+    text-wrap:balance;
+    letter-spacing:-0.01em;
+  }
+  em{
+    font-style:normal; font-weight:700; color:var(--rose);
+    text-decoration:underline wavy var(--marigold) 3px; text-underline-offset:7px;
+  }
+  :root[data-theme="dark"] em{color:var(--rose);}
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]) em{color:var(--rose);}
+  }
+
+  .eyebrow{
+    font-family:var(--font-body);
+    font-weight:600;
+    font-size:12.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--marigold-deep);
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+  }
+  :root[data-theme="dark"] .eyebrow{color:var(--marigold);}
+  @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .eyebrow{color:var(--marigold);} }
+  .eyebrow::before{
+    content:"";
+    width:20px; height:1px;
+    background:var(--marigold-deep);
+  }
+  :root[data-theme="dark"] .eyebrow::before{background:var(--marigold);}
+
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    font-family:var(--font-body);
+    font-weight:600;
+    font-size:15px;
+    padding:14px 26px;
+    border-radius:100px;
+    border:1px solid transparent;
+    cursor:pointer;
+    text-decoration:none;
+    transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
+    white-space:nowrap;
+  }
+  .btn:focus-visible{outline:3px solid var(--ring); outline-offset:2px;}
+  .btn-primary{
+    background:var(--rose);
+    color:#fff;
+    box-shadow:var(--shadow-soft);
+  }
+  .btn-primary:hover{transform:translateY(-2px) scale(1.02); box-shadow:var(--shadow); background:var(--rose-deep);}
+  .btn-ghost{
+    background:transparent;
+    color:var(--cocoa);
+    border-color:var(--line);
+    border-width:2px;
+  }
+  .btn-ghost:hover{background:var(--cream-2); transform:translateY(-2px); border-color:var(--cocoa);}
+  .btn-on-indigo{
+    background:var(--marigold);
+    color:var(--indigo-deep);
+    box-shadow:0 14px 30px -14px rgba(0,0,0,0.5);
+  }
+  .btn-on-indigo:hover{transform:translateY(-2px); background:var(--marigold-deep); color:#fff;}
+
+  /* ---------- NAV ---------- */
+  .nav{
+    position:sticky; top:0; z-index:60;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:20px 24px;
+    background:transparent;
+    transition:background .35s ease, padding .35s ease, box-shadow .35s ease, backdrop-filter .35s ease;
+  }
+  .nav.scrolled{
+    background:color-mix(in srgb, var(--cream) 88%, transparent);
+    backdrop-filter:blur(10px);
+    padding:12px 24px;
+    box-shadow:0 1px 0 var(--line);
+  }
+  .nav-inner{width:100%; max-width:1160px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:16px;}
+  .brand{
+    display:flex; align-items:center; gap:10px;
+    font-family:var(--font-display); font-weight:600; font-size:19px;
+    text-decoration:none; color:var(--cocoa);
+  }
+  .brand-mark{
+    width:34px; height:34px; border-radius:50%;
+    background:var(--rose); color:#fff;
+    display:flex; align-items:center; justify-content:center;
+    font-size:16px; font-weight:700; flex:none;
+  }
+  .nav-links{display:flex; align-items:center; gap:28px; list-style:none; margin:0; padding:0;}
+  .nav-links a{
+    font-size:14.5px; font-weight:500; text-decoration:none; color:var(--cocoa-soft);
+    position:relative; padding:4px 0;
+  }
+  .nav-links a::after{
+    content:""; position:absolute; left:0; right:0; bottom:-2px; height:1.5px;
+    background:var(--marigold-deep); transform:scaleX(0); transform-origin:left;
+    transition:transform .25s ease;
+  }
+  .nav-links a:hover{color:var(--cocoa);}
+  .nav-links a:hover::after{transform:scaleX(1);}
+  .nav-cta{display:flex; align-items:center; gap:14px;}
+  .nav-burger{display:none;}
+  @media (max-width:860px){
+    .nav-links{display:none;}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    padding:56px 0 40px;
+    overflow:hidden;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1.05fr 0.95fr;
+    gap:32px;
+    align-items:center;
+  }
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr; text-align:center;}
+    .hero-eyebrow-wrap{justify-content:center;}
+    .hero-meta{justify-content:center;}
+    .hero-ctas{justify-content:center;}
+  }
+  .hero-copy h1{
+    font-size:clamp(38px, 5.6vw, 68px);
+    line-height:1.03;
+    margin:18px 0 20px;
+  }
+  .hero-copy p{
+    font-size:17px;
+    color:var(--cocoa-soft);
+    max-width:46ch;
+    margin:0 0 30px;
+  }
+  @media (max-width:900px){ .hero-copy p{margin-left:auto; margin-right:auto;} }
+  .hero-ctas{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:26px;}
+  .hero-meta{
+    display:flex; gap:22px; flex-wrap:wrap; align-items:center;
+    font-size:14px; color:var(--cocoa-faint);
+  }
+  .hero-meta a{text-decoration:none; color:var(--cocoa-soft); font-weight:500;}
+  .hero-meta a:hover{color:var(--marigold-deep);}
+  .hero-meta span{display:inline-flex; align-items:center; gap:7px;}
+  .dot{width:5px; height:5px; border-radius:50%; background:var(--marigold-deep); display:inline-block;}
+
+  .hero-visual{position:relative; display:flex; justify-content:center; align-items:center; min-height:420px;}
+  .hero-seal{
+    position:absolute; top:4%; left:0%; z-index:5;
+    width:110px; height:110px; border-radius:50%;
+    background:var(--rose); color:#fff;
+    display:flex; align-items:center; justify-content:center;
+    text-align:center; font-family:var(--font-display); font-style:normal; font-weight:800;
+    font-size:14px; line-height:1.25; padding:6px;
+    box-shadow:var(--shadow);
+    border:3px dashed rgba(255,255,255,0.75);
+    transform:rotate(-10deg);
+  }
+  @media (prefers-reduced-motion: no-preference){
+    .hero-seal{animation:wiggle 5s ease-in-out infinite;}
+  }
+  @keyframes wiggle{
+    0%,100%{transform:rotate(-10deg);}
+    50%{transform:rotate(-4deg);}
+  }
+  .hero-img-wrap{
+    position:relative;
+    width:min(78%, 400px);
+    filter:drop-shadow(0 30px 46px rgba(44,24,16,0.38));
+  }
+  :root[data-theme="dark"] .hero-img-wrap{filter:drop-shadow(0 30px 46px rgba(0,0,0,0.6));}
+  .hero-img-wrap img{width:100%; display:block;}
+  .hero-blob{
+    position:absolute; inset:6% 4%; z-index:0;
+    background:radial-gradient(60% 60% at 50% 40%, var(--cream-3), transparent 72%);
+    border-radius:50%;
+    filter:blur(2px);
+  }
+  .crumb{
+    position:absolute; border-radius:30%;
+    opacity:.9;
+  }
+  .crumb-1{background:var(--rose);}
+  .crumb-2{background:var(--marigold); border-radius:50%;}
+  .crumb-3{background:var(--indigo);}
+  .crumb-4{background:var(--marigold-deep); border-radius:50%;}
+  @media (prefers-reduced-motion: no-preference){
+    .crumb{animation:drift 9s ease-in-out infinite;}
+  }
+  @keyframes drift{
+    0%,100%{transform:translateY(0) rotate(0deg);}
+    50%{transform:translateY(-14px) rotate(10deg);}
+  }
+
+  /* ---------- MARQUEE STRIP ---------- */
+  .marquee-wrap{
+    background:var(--marigold);
+    padding:14px 0;
+    overflow:hidden;
+  }
+  .marquee{
+    display:flex; gap:40px; width:max-content;
+    font-family:var(--font-display); font-style:normal; font-weight:700;
+    font-size:15px; color:var(--cocoa);
+    white-space:nowrap;
+  }
+  @media (prefers-reduced-motion: no-preference){
+    .marquee{animation:scroll-x 32s linear infinite;}
+    .marquee-wrap:hover .marquee{animation-play-state:paused;}
+  }
+  @keyframes scroll-x{
+    from{transform:translateX(0);}
+    to{transform:translateX(-50%);}
+  }
+  .marquee span{display:inline-flex; align-items:center; gap:40px;}
+  .marquee .sep{color:var(--rose); font-style:normal;}
+
+  /* ---------- SECTION HEADS ---------- */
+  section{padding:96px 0;}
+  .sec-head{max-width:640px; margin:0 0 48px;}
+  .sec-head h2{font-size:clamp(30px, 3.6vw, 44px); margin:16px 0 14px;}
+  .sec-head p{font-size:16px; color:var(--cocoa-soft); margin:0;}
+  .sec-head.center{margin-left:auto; margin-right:auto; text-align:center;}
+
+  .reveal{opacity:0; transform:translateY(22px); transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1; transform:translateY(0);}
+  @media (prefers-reduced-motion: reduce){ .reveal{opacity:1; transform:none; transition:none;} }
+
+  /* ---------- BARK FLAVOUR WALL ---------- */
+  .bark{background:var(--cream);}
+  .bark-layout{display:grid; grid-template-columns:1fr; gap:36px;}
+  .flavour-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:14px;
+  }
+  @media (max-width:720px){ .flavour-grid{grid-template-columns:repeat(2, 1fr);} }
+  .flavour-chip{
+    position:relative;
+    border-radius:22px;
+    overflow:hidden;
+    aspect-ratio:1/1;
+    cursor:pointer;
+    border:none;
+    padding:0;
+    background:var(--cream-2);
+    box-shadow:var(--shadow-soft);
+    transition:transform .3s ease, box-shadow .3s ease;
+  }
+  .flavour-chip:hover{transform:translateY(-4px); box-shadow:var(--shadow);}
+  .flavour-chip:focus-visible{outline:3px solid var(--ring); outline-offset:3px;}
+  .flavour-chip img{width:100%; height:100%; object-fit:cover; transition:transform .5s ease;}
+  .flavour-chip:hover img{transform:scale(1.06);}
+  .flavour-chip .fc-label{
+    position:absolute; left:0; right:0; bottom:0;
+    padding:22px 12px 10px;
+    background:linear-gradient(to top, rgba(20,10,5,0.82), transparent);
+    color:#fff; font-size:12.5px; font-weight:600; text-align:left;
+    letter-spacing:0.01em;
+  }
+  .flavour-chip .fc-check{
+    position:absolute; top:8px; right:8px; width:26px; height:26px; border-radius:50%;
+    background:rgba(255,255,255,0.85); color:var(--cocoa);
+    display:flex; align-items:center; justify-content:center;
+    font-size:13px; font-weight:700;
+    opacity:0; transform:scale(.6);
+    transition:opacity .2s ease, transform .2s ease, background .2s ease, color .2s ease;
+  }
+  .flavour-chip.selected{box-shadow:0 0 0 3px var(--marigold), var(--shadow);}
+  .flavour-chip.selected .fc-check{opacity:1; transform:scale(1); background:var(--marigold); color:#fff;}
+
+  .flavour-summary{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:26px;
+    padding:26px 26px;
+    box-shadow:var(--shadow-soft);
+  }
+  .flavour-summary h3{font-size:19px; margin-bottom:6px;}
+  .flavour-summary .fs-hint{font-size:14px; color:var(--cocoa-faint); margin:0 0 16px;}
+  .fs-list{display:flex; flex-wrap:wrap; gap:8px; min-height:34px; margin-bottom:18px;}
+  .fs-pill{
+    font-size:13px; font-weight:600; padding:7px 13px; border-radius:100px;
+    background:var(--cream-2); color:var(--cocoa-soft); border:1px solid var(--line);
+  }
+  .fs-empty{font-size:14px; color:var(--cocoa-faint); font-style:normal;}
+  .fs-note{font-size:13px; color:var(--cocoa-faint); margin-top:16px; line-height:1.6;}
+
+  /* ---------- TABS (GIFTING) ---------- */
+  .tabbar{display:flex; gap:10px; flex-wrap:wrap; margin-bottom:36px;}
+  .tab-btn{
+    font-family:var(--font-body); font-weight:600; font-size:14px;
+    padding:11px 20px; border-radius:100px; border:1px solid var(--line);
+    background:transparent; color:var(--cocoa-soft); cursor:pointer;
+    transition:all .25s ease;
+  }
+  .tab-btn:hover{border-color:var(--rose); color:var(--cocoa);}
+  .tab-btn.active{background:var(--rose); color:#fff; border-color:var(--rose);}
+  .tab-panel{display:none;}
+  .tab-panel.active{display:block; animation:fadein .5s ease;}
+  @keyframes fadein{from{opacity:0; transform:translateY(8px);} to{opacity:1; transform:translateY(0);}}
+
+  .card-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:22px;}
+  @media (max-width:900px){ .card-grid{grid-template-columns:repeat(2, 1fr);} }
+  @media (max-width:620px){ .card-grid{grid-template-columns:1fr;} }
+  .p-card{
+    background:var(--surface); border:1px solid var(--line); border-radius:26px;
+    overflow:hidden; box-shadow:var(--shadow-soft);
+    transition:transform .3s ease, box-shadow .3s ease;
+    cursor:pointer;
+  }
+  .p-card:hover{transform:translateY(-6px); box-shadow:var(--shadow);}
+  .p-card .p-img{aspect-ratio:4/3; overflow:hidden; background:var(--cream-2);}
+  .p-card .p-img img{width:100%; height:100%; object-fit:cover; transition:transform .5s ease;}
+  .p-card:hover .p-img img{transform:scale(1.05);}
+  .p-card .p-body{padding:20px 20px 22px;}
+  .p-card h4{font-family:var(--font-display); font-weight:600; font-size:18px; margin:0 0 8px;}
+  .p-card p{font-size:14px; color:var(--cocoa-soft); margin:0; line-height:1.6;}
+
+  /* ---------- DATES TIERS ---------- */
+  .dates{background:var(--cream-2);}
+  .tier-row{
+    display:grid; grid-template-columns:repeat(5, 1fr); gap:16px;
+  }
+  @media (max-width:980px){ .tier-row{grid-template-columns:repeat(3, 1fr);} }
+  @media (max-width:620px){ .tier-row{grid-template-columns:repeat(2, 1fr);} }
+  .tier-card{
+    background:var(--surface); border-radius:24px; overflow:hidden;
+    border:1px solid var(--line); box-shadow:var(--shadow-soft);
+    display:flex; flex-direction:column;
+    transition:transform .3s ease, box-shadow .3s ease;
+  }
+  .tier-card:hover{transform:translateY(-6px); box-shadow:var(--shadow);}
+  .tier-img{aspect-ratio:1/1; overflow:hidden;}
+  .tier-img img{width:100%; height:100%; object-fit:cover;}
+  .tier-body{padding:16px 14px 20px; flex:1; display:flex; flex-direction:column;}
+  .tier-name{font-family:var(--font-display); font-weight:600; font-size:16px; margin:0 0 6px;}
+  .tier-pcs{
+    font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase;
+    color:var(--marigold-deep); margin-bottom:8px;
+  }
+  .tier-desc{font-size:13px; color:var(--cocoa-soft); line-height:1.55; margin:0; flex:1;}
+  .dates-cta{margin-top:44px; text-align:center;}
+
+  /* ---------- HALFTONE DOT TRANSITIONS ---------- */
+  .section-dots{
+    position:relative; z-index:5;
+    height:120px; margin:-60px 0;
+    pointer-events:none; line-height:0;
+  }
+  .section-dots svg{width:100%; height:100%; display:block;}
+  .dots-teal-in{color:var(--indigo);}
+  .dots-teal-out{color:var(--indigo-deep);}
+  .dots-cocoa-in{color:var(--cocoa);}
+  :root[data-theme="dark"] .dots-cocoa-in{color:#120C08;}
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]) .dots-cocoa-in{color:#120C08;}
+  }
+  @media (max-width:600px){ .section-dots{height:70px; margin:-35px 0;} }
+
+  /* ---------- OCCASIONS TEAL BAND ---------- */
+  .band{
+    background:var(--indigo-deep);
+    background-image:radial-gradient(130% 120% at 85% -10%, var(--rose) 0%, transparent 45%), radial-gradient(120% 100% at 10% 110%, var(--marigold) 0%, transparent 40%), linear-gradient(160deg, var(--indigo) 0%, var(--indigo-deep) 100%);
+    color:var(--indigo-ink);
+    position:relative;
+    overflow:hidden;
+  }
+  .band .eyebrow{color:#fff;}
+  .band .eyebrow::before{background:#fff;}
+  .band h2{color:#fff;}
+  .band .sec-head p{color:rgba(255,255,255,0.8);}
+  .occ-grid{
+    display:grid; grid-template-columns:repeat(3, 1fr); gap:28px;
+    margin-top:16px;
+  }
+  @media (max-width:860px){ .occ-grid{grid-template-columns:1fr; max-width:360px; margin-left:auto; margin-right:auto;} }
+  .occ-card{text-align:center;}
+  .occ-cutout{
+    position:relative; height:280px; display:flex; align-items:flex-end; justify-content:center;
+    margin-bottom:18px;
+  }
+  .occ-cutout img{max-height:100%; width:auto; margin:0 auto; will-change:transform;}
+  .occ-name{font-family:var(--font-display); font-style:normal; font-weight:800; font-size:21px; color:#fff; margin-bottom:6px;}
+  .occ-card:nth-child(1) .occ-name{transform:rotate(-2deg);}
+  .occ-card:nth-child(2) .occ-name{transform:rotate(1.5deg);}
+  .occ-card:nth-child(3) .occ-name{transform:rotate(-1.5deg);}
+  .occ-name{display:inline-block;}
+  .occ-desc{font-size:13.5px; color:rgba(255,255,255,0.78); max-width:26ch; margin:0 auto;}
+  .band-note{
+    margin-top:56px; padding-top:32px; border-top:1px solid rgba(255,255,255,0.2);
+    display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap;
+  }
+  .band-note p{font-size:14px; color:rgba(255,255,255,0.75); margin:0; max-width:44ch;}
+
+  /* ---------- CLASS / ACTIVITY ---------- */
+  .class-sec{background:var(--cream);}
+  .class-layout{display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:center;}
+  @media (max-width:900px){ .class-layout{grid-template-columns:1fr;} }
+  .class-photo{
+    position:relative;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .class-photo-frame{
+    position:relative;
+    width:100%; max-width:400px;
+    transform:rotate(-1.5deg);
+  }
+  .class-photo-frame img{
+    width:100%; display:block; border-radius:22px;
+    box-shadow:var(--shadow);
+    border:6px solid var(--surface);
+  }
+  .class-photo-badge{
+    position:absolute; bottom:-14px; right:-10px; z-index:2;
+    background:var(--marigold); color:var(--cocoa);
+    border:3px dashed rgba(58,35,19,0.4);
+    border-radius:50%;
+    width:92px; height:92px;
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--font-display); font-weight:800; font-size:12px; text-align:center; line-height:1.25;
+    transform:rotate(7deg);
+    box-shadow:var(--shadow-soft);
+  }
+  .class-copy h2{font-size:clamp(28px, 3.4vw, 40px); margin:16px 0 16px;}
+  .class-copy p{color:var(--cocoa-soft); font-size:15.5px; max-width:52ch; margin:0 0 16px;}
+  .class-points{list-style:none; margin:22px 0 30px; padding:0; display:grid; gap:12px;}
+  .class-points li{display:flex; gap:12px; align-items:flex-start; font-size:14.5px; color:var(--cocoa-soft);}
+  .class-points li::before{
+    content:"✦"; color:var(--marigold-deep); flex:none; margin-top:1px; font-size:13px;
+  }
+
+  /* ---------- FOUNDER ---------- */
+  .founder-layout{display:grid; grid-template-columns:0.85fr 1.15fr; gap:56px; align-items:center;}
+  @media (max-width:900px){ .founder-layout{grid-template-columns:1fr; text-align:center;} }
+  .founder-photo{display:flex; justify-content:center;}
+  .founder-photo-frame{
+    position:relative;
+    width:min(72%, 280px);
+    aspect-ratio:200/316;
+  }
+  .founder-photo-frame::before{
+    content:"";
+    position:absolute; inset:-8% -18%;
+    background:radial-gradient(58% 58% at 50% 36%, var(--cream-3), transparent 72%);
+    border-radius:50%;
+    z-index:0;
+  }
+  .founder-photo-frame img{
+    position:relative; z-index:1;
+    width:100%; height:100%; object-fit:contain; object-position:bottom center;
+    filter:drop-shadow(0 22px 34px rgba(44,24,16,0.35));
+  }
+  :root[data-theme="dark"] .founder-photo-frame img{filter:drop-shadow(0 22px 34px rgba(0,0,0,0.6));}
+  .founder-accent{
+    position:absolute; z-index:2;
+    left:-16%; bottom:6%; width:48%;
+    border-radius:14px; overflow:hidden;
+    border:5px solid var(--surface);
+    box-shadow:var(--shadow);
+    transform:rotate(-7deg);
+  }
+  .founder-accent img{width:100%; display:block;}
+  @media (max-width:900px){ .founder-accent{left:-8%; bottom:0;} }
+  .founder-copy h2{font-size:clamp(28px, 3.4vw, 40px); margin:16px 0 16px;}
+  .founder-copy p{color:var(--cocoa-soft); font-size:15.5px; max-width:54ch; margin:0 0 8px;}
+  @media (max-width:900px){ .founder-copy p{margin-left:auto; margin-right:auto;} }
+  .founder-points{list-style:none; margin:20px 0 28px; padding:0; display:grid; gap:12px;}
+  @media (max-width:900px){ .founder-points{max-width:52ch; margin-left:auto; margin-right:auto;} }
+  .founder-points li{display:flex; gap:12px; align-items:flex-start; font-size:14.5px; color:var(--cocoa-soft); text-align:left;}
+  .founder-points li::before{content:"♡"; color:var(--rose); flex:none; margin-top:1px; font-size:13px;}
+
+  /* ---------- HOW TO ORDER ---------- */
+  .steps{background:var(--cream-2);}
+  .step-row{display:grid; grid-template-columns:repeat(3, 1fr); gap:26px;}
+  @media (max-width:820px){ .step-row{grid-template-columns:1fr; max-width:420px; margin:0 auto;} }
+  .step-card{
+    background:var(--surface); border-radius:26px; padding:30px 26px; border:1px solid var(--line);
+    box-shadow:var(--shadow-soft);
+    position:relative;
+  }
+  .step-num{
+    font-family:var(--font-display); font-style:normal; font-weight:800; font-size:36px;
+    color:var(--marigold); line-height:1; margin-bottom:14px; display:block;
+  }
+  .step-row .step-card:nth-child(1) .step-num{color:var(--rose);}
+  .step-row .step-card:nth-child(2) .step-num{color:var(--marigold-deep);}
+  .step-row .step-card:nth-child(3) .step-num{color:var(--indigo-deep);}
+  .step-card h4{font-family:var(--font-display); font-weight:600; font-size:18px; margin:0 0 8px;}
+  .step-card p{font-size:14px; color:var(--cocoa-soft); margin:0; line-height:1.6;}
+
+  /* ---------- FAQ ---------- */
+  .faq-list{max-width:760px; margin:0 auto;}
+  .faq-item{border-bottom:1px solid var(--line);}
+  .faq-q{
+    width:100%; text-align:left; background:none; border:none; cursor:pointer;
+    padding:22px 4px; display:flex; align-items:center; justify-content:space-between; gap:20px;
+    font-family:var(--font-display); font-weight:600; font-size:18px; color:var(--cocoa);
+  }
+  .faq-q:focus-visible{outline:3px solid var(--ring); outline-offset:2px;}
+  .faq-icon{
+    flex:none; width:28px; height:28px; border-radius:50%; border:1px solid var(--line);
+    display:flex; align-items:center; justify-content:center; font-size:15px; color:var(--marigold-deep);
+    transition:transform .3s ease;
+  }
+  .faq-item.open .faq-icon{transform:rotate(45deg);}
+  .faq-a{
+    max-height:0; overflow:hidden; transition:max-height .4s ease;
+  }
+  .faq-a p{margin:0 4px 22px; font-size:15px; color:var(--cocoa-soft); max-width:64ch; line-height:1.65;}
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    background:var(--cocoa); color:var(--cream);
+    padding:64px 0 32px;
+  }
+  :root[data-theme="dark"] footer{background:#120C08;}
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]) footer{background:#120C08;}
+  }
+  .footer-top{
+    display:flex; justify-content:space-between; gap:40px; flex-wrap:wrap;
+    padding-bottom:40px; border-bottom:1px solid rgba(251,243,228,0.16);
+  }
+  .footer-brand{font-family:var(--font-display); font-size:26px; font-weight:600;}
+  .footer-tag{font-family:var(--font-display); font-style:normal; font-weight:600; color:var(--marigold); margin-top:8px; font-size:15px;}
+  .footer-links{display:flex; gap:48px; flex-wrap:wrap;}
+  .footer-col h5{font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:rgba(251,243,228,0.5); margin:0 0 14px; font-weight:600;}
+  .footer-col a{display:block; font-size:14.5px; color:rgba(251,243,228,0.85); text-decoration:none; margin-bottom:10px;}
+  .footer-col a:hover{color:var(--marigold);}
+  .footer-bottom{
+    padding-top:26px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;
+    font-size:13px; color:rgba(251,243,228,0.5);
+  }
+
+  /* ---------- WHATSAPP FLOAT ---------- */
+  .wa-float{
+    position:fixed; right:22px; bottom:22px; z-index:70;
+    display:flex; align-items:center; gap:10px;
+    background:#25D366; color:#0b3d20;
+    padding:14px 20px; border-radius:100px;
+    text-decoration:none; font-weight:700; font-size:14px;
+    box-shadow:0 16px 34px -14px rgba(0,0,0,0.5);
+    transition:transform .25s ease;
+  }
+  .wa-float:hover{transform:translateY(-3px) scale(1.03);}
+  .wa-float svg{width:20px; height:20px; flex:none;}
+  @media (prefers-reduced-motion: no-preference){
+    .wa-pulse{
+      position:absolute; inset:-4px; border-radius:100px; border:2px solid #25D366;
+      animation:pulse 2.2s ease-out infinite;
+    }
+  }
+  @keyframes pulse{
+    0%{opacity:.7; transform:scale(1);}
+    100%{opacity:0; transform:scale(1.35);}
+  }
+  @media (max-width:560px){
+    .wa-float span{display:none;}
+    .wa-float{padding:14px; }
+  }
+
+  /* ---------- LIGHTBOX ---------- */
+  .lightbox{
+    position:fixed; inset:0; z-index:100; background:rgba(20,12,7,0.86);
+    display:none; align-items:center; justify-content:center; padding:32px;
+    backdrop-filter:blur(4px);
+  }
+  .lightbox.open{display:flex;}
+  .lightbox-inner{max-width:520px; width:100%; text-align:center;}
+  .lightbox-inner img{border-radius:16px; box-shadow:0 30px 70px -20px rgba(0,0,0,0.7); max-height:70vh; width:auto; margin:0 auto;}
+  .lightbox-cap{color:#fff; font-family:var(--font-display); font-size:19px; margin-top:18px;}
+  .lightbox-close{
+    margin-top:20px; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.3);
+    color:#fff; padding:10px 22px; border-radius:100px; cursor:pointer; font-size:13px; font-weight:600;
+  }
+
+  .visually-hidden{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0);}
+
+  /* ---------- MOBILE REFINEMENTS ---------- */
+  @media (max-width:600px){
+    .container{padding:0 18px;}
+    section{padding:56px 0;}
+    .class-photo-badge{right:2px; bottom:-10px; width:80px; height:80px; font-size:11px;}
+    .hero{padding:36px 0 28px;}
+    .hero-visual{min-height:320px;}
+    .hero-seal{
+      width:84px; height:84px; font-size:11px;
+      top:-2%; left:50%; transform:translateX(-118px) rotate(-10deg);
+    }
+    @media (prefers-reduced-motion: no-preference){
+      .hero-seal{animation:wiggle-mobile 5s ease-in-out infinite;}
+    }
+    @keyframes wiggle-mobile{
+      0%,100%{transform:translateX(-118px) rotate(-10deg);}
+      50%{transform:translateX(-118px) rotate(-4deg);}
+    }
+    .hero-img-wrap{width:min(84%, 320px);}
+    .sec-head{margin-bottom:32px;}
+    .marquee{font-size:13px; gap:26px;}
+    .marquee span{gap:26px;}
+    .flavour-summary{padding:20px;}
+    .tabbar{gap:8px;}
+    .tab-btn{padding:9px 15px; font-size:13px;}
+    .occ-cutout{height:220px;}
+    .step-num{font-size:30px;}
+    .band-note{flex-direction:column; align-items:flex-start;}
+    .footer-top{gap:28px;}
+    .footer-links{gap:32px;}
+  }
+
+  /* ---------- EDIT MODE (only active with ?edit=1 in the URL) ---------- */
+  [contenteditable="true"]{
+    outline:1.5px dashed transparent; outline-offset:3px; border-radius:6px; cursor:text;
+    transition:outline-color .15s ease, background .15s ease;
+  }
+  [contenteditable="true"]:hover{ outline-color:color-mix(in srgb, var(--rose) 55%, transparent); }
+  [contenteditable="true"]:focus{ outline:2px solid var(--rose); outline-offset:3px; background:color-mix(in srgb, var(--rose) 8%, transparent); }
+
+  .edit-launcher{
+    position:fixed; left:16px; bottom:16px; z-index:69;
+    display:flex; align-items:center; gap:6px;
+    padding:10px 16px; border-radius:100px;
+    background:var(--surface); color:var(--cocoa-soft);
+    border:1.5px solid var(--line);
+    font-family:var(--font-body); font-size:13px; font-weight:600;
+    cursor:pointer; box-shadow:var(--shadow-soft);
+    transition:transform .2s ease, color .2s ease, border-color .2s ease;
+  }
+  .edit-launcher:hover{ color:var(--cocoa); border-color:var(--cocoa); transform:translateY(-2px); }
+  .edit-mode .edit-launcher{ display:none; }
+  .edit-toolbar{
+    position:sticky; top:0; z-index:500;
+    display:flex; flex-wrap:wrap; align-items:center; gap:10px 14px;
+    background:var(--cocoa); color:var(--cream);
+    padding:12px 18px;
+    font-family:var(--font-body); font-size:13.5px;
+    box-shadow:0 6px 24px -10px rgba(0,0,0,0.5);
+  }
+  .edit-toolbar .edit-group{display:flex; align-items:center; gap:7px;}
+  .edit-toolbar label{font-weight:600; opacity:.85; white-space:nowrap;}
+  .edit-toolbar select, .edit-toolbar .edit-btn{
+    font-family:var(--font-body); font-size:13px; font-weight:600;
+    padding:8px 13px; border-radius:9px; border:1px solid rgba(255,255,255,0.28);
+    background:rgba(255,255,255,0.08); color:var(--cream); cursor:pointer;
+  }
+  .edit-toolbar select{ background:var(--cream); color:var(--cocoa); border-color:transparent; }
+  .edit-toolbar .edit-btn:hover{background:rgba(255,255,255,0.2);}
+  .edit-toolbar .edit-save{background:var(--rose); border-color:var(--rose); margin-left:auto;}
+  .edit-toolbar .edit-save:hover{background:var(--rose-deep);}
+  .edit-toolbar .edit-reset{background:transparent;}
+  .edit-toolbar .edit-hint{flex-basis:100%; opacity:.65; font-size:12px; line-height:1.5;}
+  .edit-toolbar input[type="file"]{display:none;}
+
+  .edit-drag-handle{
+    display:flex; align-items:center; justify-content:center; gap:8px;
+    margin:0 auto 18px; max-width:fit-content;
+    padding:7px 18px; border-radius:100px;
+    background:var(--cream-2); border:1.5px dashed var(--line);
+    font-family:var(--font-body); font-size:12.5px; font-weight:700; color:var(--cocoa-soft);
+    cursor:grab; touch-action:none; user-select:none;
+  }
+  .edit-drag-handle:active{cursor:grabbing;}
+  .edit-draggable{transition:opacity .15s ease;}
+  .edit-dragging{opacity:.35;}
+
+  .edit-img-host{position:relative !important;}
+  .edit-img-swap{
+    position:absolute; left:10px; bottom:10px; z-index:20;
+    display:inline-flex; align-items:center; gap:6px;
+    padding:8px 13px; border-radius:100px;
+    background:rgba(20,12,7,0.8); color:#fff;
+    font-family:var(--font-body); font-size:12px; font-weight:700;
+    cursor:pointer; border:1px solid rgba(255,255,255,0.35);
+  }
+  .edit-img-swap:hover{background:var(--rose); border-color:var(--rose);}
+
+  .edit-sortable-item{position:relative !important;}
+  .edit-card-handle{
+    position:absolute; top:8px; right:8px; z-index:21;
+    width:28px; height:28px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    background:rgba(20,12,7,0.78); color:#fff;
+    font-size:14px; cursor:grab; touch-action:none; user-select:none;
+    border:1px solid rgba(255,255,255,0.35);
+  }
+  .edit-card-handle:hover{background:var(--rose); border-color:var(--rose);}
+  .edit-card-handle:active{cursor:grabbing;}
+
+  .edit-add-tile{
+    display:flex; align-items:center; justify-content:center;
+    min-height:140px; width:100%;
+    border-radius:20px;
+    border:2px dashed var(--line);
+    background:transparent;
+    color:var(--cocoa-faint);
+    font-family:var(--font-body); font-weight:700; font-size:14px;
+    cursor:pointer;
+    transition:border-color .2s ease, color .2s ease, background .2s ease;
+  }
+  .edit-add-tile:hover{border-color:var(--rose); color:var(--rose); background:color-mix(in srgb, var(--rose) 6%, transparent);}
+  .edit-add-tile-square{aspect-ratio:1/1; min-height:0;}
+
+  /* ---------- MOBILE NAV ---------- */
+  .nav-burger{
+    display:none; background:none; border:none; cursor:pointer; padding:6px;
+    color:var(--cocoa); flex:none;
+  }
+  .nav-burger svg{width:24px; height:24px;}
+  .nav-links-panel{
+    display:none;
+  }
+  @media (max-width:860px){
+    .nav-links{display:none;}
+    .nav-burger{display:flex;}
+    .nav-links-panel.open{
+      display:flex; flex-direction:column; gap:2px;
+      position:absolute; top:100%; left:0; right:0;
+      background:var(--surface); border-bottom:1px solid var(--line);
+      padding:10px 24px 16px; box-shadow:var(--shadow-soft);
+    }
+    .nav-links-panel.open a{
+      padding:12px 4px; font-size:15px; font-weight:600; text-decoration:none;
+      color:var(--cocoa); border-bottom:1px solid var(--line-soft);
+    }
+    .nav-links-panel.open a:last-child{border-bottom:none;}
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <nav class="nav" id="siteNav" style="position:relative;">
+    <div class="nav-inner">
+      <a href="#top" class="brand"><span class="brand-mark">M</span> Maam's Delight</a>
+      <ul class="nav-links">
+        <li><a href="#founder">Kenali Maam</a></li>
+        <li><a href="#bark">Choc Bark</a></li>
+        <li><a href="#hantaran">Hantaran &amp; Hadiah</a></li>
+        <li><a href="#dates">Dipped Dates</a></li>
+        <li><a href="#kelas">Kelas Coklat</a></li>
+        <li><a href="#tempah">Cara Tempah</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a class="btn btn-primary" href="https://wa.me/601120723156?text=Hai%20Maam's%20Delight!%20Saya%20berminat%20nak%20tempah%20coklat." target="_blank" rel="noopener">WhatsApp Kami</a>
+        <button type="button" class="nav-burger" id="navBurger" aria-label="Buka menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="nav-links-panel" id="navLinksPanel">
+      <a href="#founder">Kenali Maam</a>
+      <a href="#bark">Choc Bark</a>
+      <a href="#hantaran">Hantaran &amp; Hadiah</a>
+      <a href="#dates">Dipped Dates</a>
+      <a href="#kelas">Kelas Coklat</a>
+      <a href="#tempah">Cara Tempah</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow hero-eyebrow-wrap">Coklat Tempahan Buatan Tangan · Malaysia</span>
+        <h1>Hadiah yang <em>diikat</em><br>dengan citarasa.</h1>
+        <p>Choc bark, coklat dipped dates, bouquet dan hantaran — setiap kotak disusun ikut perisa, warna dan cerita majlis anda. Dari hari jadi kecil-kecilan, hinggalah dulang perkahwinan.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="https://wa.me/601120723156?text=Hai%20Maam's%20Delight!%20Saya%20berminat%20nak%20tempah%20coklat." target="_blank" rel="noopener">
+            Tempah di WhatsApp
+          </a>
+          <a class="btn btn-ghost" href="#bark">Lihat Koleksi ↓</a>
+        </div>
+        <div class="hero-meta">
+          <a href="https://instagram.com/maamsdelight" target="_blank" rel="noopener"><span><span class="dot"></span>@maamsdelight</span></a>
+          <a href="https://wa.me/601120723156" target="_blank" rel="noopener"><span><span class="dot"></span>011-2072 3156</span></a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-blob" aria-hidden="true"></div>
+        <div class="crumb crumb-1" style="width:34px;height:34px;top:8%;right:10%;" aria-hidden="true"></div>
+        <div class="crumb crumb-2" style="width:22px;height:22px;bottom:14%;left:4%;animation-delay:2s;" aria-hidden="true"></div>
+        <div class="crumb crumb-3" style="width:16px;height:16px;bottom:36%;right:2%;animation-delay:4s;" aria-hidden="true"></div>
+        <div class="crumb crumb-4" style="width:20px;height:20px;top:38%;left:0%;animation-delay:1s;" aria-hidden="true"></div>
+        <div class="hero-seal">By<br>Maam's<br>Delight</div>
+        <div class="hero-img-wrap">
+          <img src="images/photo-01.webp" alt="Buket coklat dan bunga kering Maam's Delight dalam vas emas" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee" id="marqueeTrack">
+      <span>Perkahwinan <span class="sep">•</span> Pertunangan <span class="sep">•</span> Hari Jadi <span class="sep">•</span> Korporat <span class="sep">•</span> Hantaran <span class="sep">•</span> Apresiasi Guru <span class="sep">•</span> Baby Shower <span class="sep">•</span></span>
+      <span>Perkahwinan <span class="sep">•</span> Pertunangan <span class="sep">•</span> Hari Jadi <span class="sep">•</span> Korporat <span class="sep">•</span> Hantaran <span class="sep">•</span> Apresiasi Guru <span class="sep">•</span> Baby Shower <span class="sep">•</span></span>
+    </div>
+  </div>
+
+  <section class="founder-sec" id="founder" style="background:color-mix(in srgb, var(--marigold) 6%, var(--cream));">
+    <div class="container founder-layout">
+      <div class="founder-photo reveal">
+        <div class="founder-photo-frame">
+          <img src="images/photo-02.webp" alt="Maam, pengasas Maam's Delight, tersenyum dengan tangan bersilang" loading="lazy" />
+          <div class="founder-accent">
+            <img src="images/photo-03.jpg" alt="Maam sedang menyiapkan coklat dipped dates di kaunter Maam's Delight" loading="lazy" />
+          </div>
+        </div>
+      </div>
+      <div class="founder-copy reveal">
+        <span class="eyebrow">Di Sebalik Setiap Kotak</span>
+        <h2>Kenali Maam, tangan di sebalik Maam's Delight.</h2>
+        <p>Setiap coklat yang keluar dari dapur kami dibuat dengan tangan — bukan mesin, dan dengan hati, bukan sekadar untuk dijual. Dari memilih kombinasi perisa, menyusun setiap keping bark, hinggalah membungkus hantaran kahwin — Maam sendiri yang turun tangan memastikan setiap kotak cukup istimewa untuk jadi sebahagian daripada cerita anda.</p>
+        <ul class="founder-points">
+          <li>Percaya setiap hadiah patut terasa peribadi, bukan sekadar "off-the-shelf"</li>
+          <li>Sentiasa teruja borak pasal kombinasi perisa baharu dengan pelanggan</li>
+          <li>Paling suka bila pelanggan hantar gambar buka kotak coklat mereka — itu yang buat semua kerja ni berbaloi</li>
+        </ul>
+        <a class="btn btn-primary" href="https://wa.me/601120723156?text=Hai%20Maam!%20Saya%20nampak%20page%20Maam's%20Delight%2C%20nak%20borak%20sikit." target="_blank" rel="noopener">Borak Terus Dengan Maam</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bark" id="bark">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Choc Bark Series</span>
+        <h2>Sembilan perisa, satu keping gembira.</h2>
+        <p>Coklat bark berlapis premium, dihias freeze-dried buah, pretzel bergaram dan banyak lagi. Sesuai jadi souvenir majlis, hantaran kecil, atau treat untuk diri sendiri. Cuba <strong>tekan perisa</strong> yang anda suka — kami akan sediakan senarai untuk anda hantar terus ke WhatsApp.</p>
+      </div>
+
+      <div class="bark-layout">
+        <div class="flavour-grid reveal" id="flavourGrid">
+          <button class="flavour-chip" data-flavour="Raspberry &amp; Orange (Milk)">
+            <img src="images/photo-04.jpg" alt="Choc bark freeze dried raspberry dan dried orange" loading="lazy" />
+            <span class="fc-check">✓</span>
+            <span class="fc-label">Raspberry &amp; Orange</span>
+          </button>
+          <button class="flavour-chip" data-flavour="Cookies &amp; Cream (White)">
+            <img src="images/photo-05.jpg" alt="Choc bark cookies and cream" loading="lazy" />
+            <span class="fc-check">✓</span>
+            <span class="fc-label">Cookies &amp; Cream</span>
+          </button>
+          <button class="flavour-chip" data-flavour="Freeze Dried Strawberry">
+            <img src="images/photo-06.jpg" alt="Choc bark freeze dried strawberry" loading="lazy" />
+            <span class="fc-check">✓</span>
+            <span class="fc-label">Freeze Dried Strawberry</span>
+          </button>
+          <button class="flavour-chip" data-flavour="Freeze Dried Raspberry">
+            <img src="images/photo-07.jpg" alt="Choc bark freeze dried raspberry" loading="lazy" />
+            <span class="fc-check">✓</span>
+            <span class="fc-label">Freeze Dried Raspberry</span>
+          </button>
+          <button class="flavour-chip" data-flavour="Salted Pretzel">
+            <img src="images/photo-08.jpg" alt="Choc bark salted pretzel" loading="lazy" />
+            <span class="fc-check">✓</span>
+            <span class="fc-label">Salted Pretzel</span>
+          </button>
+          <button class="flavour-chip" data-flavour="Dried Cranberry">
+            <img src="images/photo-09.jpg" alt="Choc bark dried cranberry" loading="lazy" />
+            <span class="fc-check">✓</span>
+            <span class="fc-label">Dried Cranberry</span>
+          </button>
+          <button class="flavour-chip" data-flavour="Cookies &amp; Cream (Milk)">
+            <img src="images/photo-10.jpg" alt="Choc bark cookies and cream milk chocolate" loading="lazy" />
+            <span class="fc-check">✓</span>
+            <span class="fc-label">Cookies &amp; Cream (Milk)</span>
+          </button>
+          <button class="flavour-chip" data-flavour="Rose Petals &amp; Orange">
+            <img src="images/photo-11.jpg" alt="Choc bark rose petals dan dried orange" loading="lazy" />
+            <span class="fc-check">✓</span>
+            <span class="fc-label">Rose Petals &amp; Orange</span>
+          </button>
+          <button class="flavour-chip" data-flavour="Raspberry &amp; Orange (Dark)">
+            <img src="images/photo-12.jpg" alt="Choc bark dark chocolate raspberry dan orange" loading="lazy" />
+            <span class="fc-check">✓</span>
+            <span class="fc-label">Raspberry &amp; Orange (Dark)</span>
+          </button>
+        </div>
+
+        <div class="flavour-summary reveal">
+          <h3>Pilihan Perisa Anda</h3>
+          <p class="fs-hint">Tekan gambar di atas untuk pilih perisa kegemaran anda.</p>
+          <div class="fs-list" id="fsList">
+            <span class="fs-empty" id="fsEmpty">Belum ada perisa dipilih lagi.</span>
+          </div>
+          <a class="btn btn-primary" id="fsSend" href="https://wa.me/601120723156?text=Hai%20Maam's%20Delight!%20Saya%20nak%20tempah%20Choc%20Bark." target="_blank" rel="noopener">Hantar Pilihan ke WhatsApp</a>
+          <p class="fs-note">Kombinasi juga tersedia: <strong>Pretzel &amp; Choc</strong> (campuran pretzel + bark), <strong>Pretzel</strong> sahaja, atau <strong>Choc Combi</strong> (campuran beberapa perisa bark). Boleh minta kombinasi ikut citarasa anda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hantaran" id="hantaran" style="background:color-mix(in srgb, var(--rose) 7%, var(--cream));">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Siri Hadiahan</span>
+        <h2>Untuk setiap "kenapa" di sebalik hadiah.</h2>
+        <p>Dari kejutan hari jadi hinggalah hantaran kahwin — pilih format yang sesuai dengan majlis anda. Setiap satu boleh disesuaikan warna reben, kad ucapan dan perisa.</p>
+      </div>
+
+      <div class="tabbar reveal" id="tabbar" role="tablist">
+        <button class="tab-btn active" data-tab="semua" role="tab" aria-selected="true">Semua</button>
+        <button class="tab-btn" data-tab="majlis" role="tab" aria-selected="false">Majlis &amp; Bouquet</button>
+        <button class="tab-btn" data-tab="korporat" role="tab" aria-selected="false">Korporat &amp; Kumpulan</button>
+        <button class="tab-btn" data-tab="hantaran" role="tab" aria-selected="false">Hantaran</button>
+      </div>
+
+      <div class="tab-panel active reveal" data-panel="semua">
+        <div class="card-grid" id="giftGridAll"></div>
+      </div>
+      <div class="tab-panel" data-panel="majlis"><div class="card-grid" id="giftGridMajlis"></div></div>
+      <div class="tab-panel" data-panel="korporat"><div class="card-grid" id="giftGridKorporat"></div></div>
+      <div class="tab-panel" data-panel="hantaran"><div class="card-grid" id="giftGridHantaran"></div></div>
+    </div>
+  </section>
+
+  <section class="dates" id="dates">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Koleksi Coklat Dipped Dates</span>
+        <h2>Kurma dilapik coklat, dari sekeping hingga sekotak penuh.</h2>
+        <p>Lima saiz pilihan — makin besar kotak, makin banyak perisa yang boleh dicampur. Sesuai jadi door gift, hamper raya atau hantaran perkahwinan.</p>
+      </div>
+
+      <div class="tier-row reveal" id="tierRow"></div>
+
+      <div class="dates-cta reveal">
+        <a class="btn btn-primary" href="https://wa.me/601120723156?text=Hai%20Maam's%20Delight!%20Saya%20nak%20tanya%20tentang%20Coklat%20Dipped%20Dates." target="_blank" rel="noopener">Dapatkan Sebut Harga</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-dots dots-teal-in" aria-hidden="true"><svg viewBox="0 0 1200 150" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><circle cx="297.5" cy="59.5" r="2.20"/><circle cx="314.5" cy="59.5" r="2.77"/><circle cx="331.5" cy="59.5" r="3.15"/><circle cx="348.5" cy="59.5" r="3.39"/><circle cx="365.5" cy="59.5" r="3.51"/><circle cx="382.5" cy="59.5" r="3.51"/><circle cx="399.5" cy="59.5" r="3.41"/><circle cx="416.5" cy="59.5" r="3.18"/><circle cx="433.5" cy="59.5" r="2.82"/><circle cx="450.5" cy="59.5" r="2.28"/><circle cx="467.5" cy="59.5" r="1.42"/><circle cx="790.5" cy="59.5" r="1.89"/><circle cx="807.5" cy="59.5" r="2.56"/><circle cx="824.5" cy="59.5" r="3.01"/><circle cx="841.5" cy="59.5" r="3.30"/><circle cx="858.5" cy="59.5" r="3.47"/><circle cx="875.5" cy="59.5" r="3.52"/><circle cx="892.5" cy="59.5" r="3.47"/><circle cx="909.5" cy="59.5" r="3.29"/><circle cx="926.5" cy="59.5" r="2.99"/><circle cx="943.5" cy="59.5" r="2.53"/><circle cx="960.5" cy="59.5" r="1.84"/><circle cx="8.5" cy="76.5" r="3.42"/><circle cx="25.5" cy="76.5" r="2.84"/><circle cx="42.5" cy="76.5" r="2.17"/><circle cx="59.5" cy="76.5" r="1.32"/><circle cx="195.5" cy="76.5" r="1.60"/><circle cx="212.5" cy="76.5" r="2.38"/><circle cx="229.5" cy="76.5" r="3.02"/><circle cx="246.5" cy="76.5" r="3.57"/><circle cx="263.5" cy="76.5" r="4.05"/><circle cx="280.5" cy="76.5" r="4.47"/><circle cx="297.5" cy="76.5" r="4.82"/><circle cx="314.5" cy="76.5" r="5.10"/><circle cx="331.5" cy="76.5" r="5.32"/><circle cx="348.5" cy="76.5" r="5.46"/><circle cx="365.5" cy="76.5" r="5.54"/><circle cx="382.5" cy="76.5" r="5.54"/><circle cx="399.5" cy="76.5" r="5.48"/><circle cx="416.5" cy="76.5" r="5.34"/><circle cx="433.5" cy="76.5" r="5.13"/><circle cx="450.5" cy="76.5" r="4.86"/><circle cx="467.5" cy="76.5" r="4.51"/><circle cx="484.5" cy="76.5" r="4.10"/><circle cx="501.5" cy="76.5" r="3.63"/><circle cx="518.5" cy="76.5" r="3.09"/><circle cx="535.5" cy="76.5" r="2.46"/><circle cx="552.5" cy="76.5" r="1.71"/><circle cx="705.5" cy="76.5" r="2.08"/><circle cx="722.5" cy="76.5" r="2.77"/><circle cx="739.5" cy="76.5" r="3.35"/><circle cx="756.5" cy="76.5" r="3.86"/><circle cx="773.5" cy="76.5" r="4.31"/><circle cx="790.5" cy="76.5" r="4.68"/><circle cx="807.5" cy="76.5" r="4.99"/><circle cx="824.5" cy="76.5" r="5.24"/><circle cx="841.5" cy="76.5" r="5.41"/><circle cx="858.5" cy="76.5" r="5.52"/><circle cx="875.5" cy="76.5" r="5.55"/><circle cx="892.5" cy="76.5" r="5.51"/><circle cx="909.5" cy="76.5" r="5.40"/><circle cx="926.5" cy="76.5" r="5.22"/><circle cx="943.5" cy="76.5" r="4.98"/><circle cx="960.5" cy="76.5" r="4.66"/><circle cx="977.5" cy="76.5" r="4.28"/><circle cx="994.5" cy="76.5" r="3.83"/><circle cx="1011.5" cy="76.5" r="3.32"/><circle cx="1028.5" cy="76.5" r="2.73"/><circle cx="1045.5" cy="76.5" r="2.04"/><circle cx="1198.5" cy="76.5" r="1.76"/><circle cx="1215.5" cy="76.5" r="2.50"/><circle cx="8.5" cy="93.5" r="5.48"/><circle cx="25.5" cy="93.5" r="5.14"/><circle cx="42.5" cy="93.5" r="4.80"/><circle cx="59.5" cy="93.5" r="4.49"/><circle cx="76.5" cy="93.5" r="4.21"/><circle cx="93.5" cy="93.5" r="3.99"/><circle cx="110.5" cy="93.5" r="3.86"/><circle cx="127.5" cy="93.5" r="3.82"/><circle cx="144.5" cy="93.5" r="3.89"/><circle cx="161.5" cy="93.5" r="4.05"/><circle cx="178.5" cy="93.5" r="4.28"/><circle cx="195.5" cy="93.5" r="4.58"/><circle cx="212.5" cy="93.5" r="4.90"/><circle cx="229.5" cy="93.5" r="5.24"/><circle cx="246.5" cy="93.5" r="5.58"/><circle cx="263.5" cy="93.5" r="5.90"/><circle cx="280.5" cy="93.5" r="6.19"/><circle cx="297.5" cy="93.5" r="6.45"/><circle cx="314.5" cy="93.5" r="6.66"/><circle cx="331.5" cy="93.5" r="6.83"/><circle cx="348.5" cy="93.5" r="6.94"/><circle cx="365.5" cy="93.5" r="7.00"/><circle cx="382.5" cy="93.5" r="7.01"/><circle cx="399.5" cy="93.5" r="6.95"/><circle cx="416.5" cy="93.5" r="6.85"/><circle cx="433.5" cy="93.5" r="6.69"/><circle cx="450.5" cy="93.5" r="6.48"/><circle cx="467.5" cy="93.5" r="6.22"/><circle cx="484.5" cy="93.5" r="5.93"/><circle cx="501.5" cy="93.5" r="5.62"/><circle cx="518.5" cy="93.5" r="5.28"/><circle cx="535.5" cy="93.5" r="4.94"/><circle cx="552.5" cy="93.5" r="4.61"/><circle cx="569.5" cy="93.5" r="4.32"/><circle cx="586.5" cy="93.5" r="4.07"/><circle cx="603.5" cy="93.5" r="3.90"/><circle cx="620.5" cy="93.5" r="3.82"/><circle cx="637.5" cy="93.5" r="3.85"/><circle cx="654.5" cy="93.5" r="3.97"/><circle cx="671.5" cy="93.5" r="4.18"/><circle cx="688.5" cy="93.5" r="4.45"/><circle cx="705.5" cy="93.5" r="4.76"/><circle cx="722.5" cy="93.5" r="5.10"/><circle cx="739.5" cy="93.5" r="5.44"/><circle cx="756.5" cy="93.5" r="5.77"/><circle cx="773.5" cy="93.5" r="6.07"/><circle cx="790.5" cy="93.5" r="6.35"/><circle cx="807.5" cy="93.5" r="6.58"/><circle cx="824.5" cy="93.5" r="6.77"/><circle cx="841.5" cy="93.5" r="6.90"/><circle cx="858.5" cy="93.5" r="6.98"/><circle cx="875.5" cy="93.5" r="7.01"/><circle cx="892.5" cy="93.5" r="6.98"/><circle cx="909.5" cy="93.5" r="6.90"/><circle cx="926.5" cy="93.5" r="6.76"/><circle cx="943.5" cy="93.5" r="6.57"/><circle cx="960.5" cy="93.5" r="6.33"/><circle cx="977.5" cy="93.5" r="6.06"/><circle cx="994.5" cy="93.5" r="5.75"/><circle cx="1011.5" cy="93.5" r="5.42"/><circle cx="1028.5" cy="93.5" r="5.08"/><circle cx="1045.5" cy="93.5" r="4.75"/><circle cx="1062.5" cy="93.5" r="4.43"/><circle cx="1079.5" cy="93.5" r="4.16"/><circle cx="1096.5" cy="93.5" r="3.96"/><circle cx="1113.5" cy="93.5" r="3.84"/><circle cx="1130.5" cy="93.5" r="3.82"/><circle cx="1147.5" cy="93.5" r="3.91"/><circle cx="1164.5" cy="93.5" r="4.08"/><circle cx="1181.5" cy="93.5" r="4.33"/><circle cx="1198.5" cy="93.5" r="4.63"/><circle cx="1215.5" cy="93.5" r="4.96"/><circle cx="8.5" cy="110.5" r="6.96"/><circle cx="25.5" cy="110.5" r="6.69"/><circle cx="42.5" cy="110.5" r="6.44"/><circle cx="59.5" cy="110.5" r="6.20"/><circle cx="76.5" cy="110.5" r="6.01"/><circle cx="93.5" cy="110.5" r="5.86"/><circle cx="110.5" cy="110.5" r="5.77"/><circle cx="127.5" cy="110.5" r="5.74"/><circle cx="144.5" cy="110.5" r="5.79"/><circle cx="161.5" cy="110.5" r="5.89"/><circle cx="178.5" cy="110.5" r="6.06"/><circle cx="195.5" cy="110.5" r="6.27"/><circle cx="212.5" cy="110.5" r="6.51"/><circle cx="229.5" cy="110.5" r="6.77"/><circle cx="246.5" cy="110.5" r="7.03"/><circle cx="263.5" cy="110.5" r="7.29"/><circle cx="280.5" cy="110.5" r="7.53"/><circle cx="297.5" cy="110.5" r="7.74"/><circle cx="314.5" cy="110.5" r="7.92"/><circle cx="331.5" cy="110.5" r="8.06"/><circle cx="348.5" cy="110.5" r="8.16"/><circle cx="365.5" cy="110.5" r="8.21"/><circle cx="382.5" cy="110.5" r="8.21"/><circle cx="399.5" cy="110.5" r="8.17"/><circle cx="416.5" cy="110.5" r="8.08"/><circle cx="433.5" cy="110.5" r="7.94"/><circle cx="450.5" cy="110.5" r="7.77"/><circle cx="467.5" cy="110.5" r="7.56"/><circle cx="484.5" cy="110.5" r="7.32"/><circle cx="501.5" cy="110.5" r="7.06"/><circle cx="518.5" cy="110.5" r="6.80"/><circle cx="535.5" cy="110.5" r="6.54"/><circle cx="552.5" cy="110.5" r="6.30"/><circle cx="569.5" cy="110.5" r="6.08"/><circle cx="586.5" cy="110.5" r="5.91"/><circle cx="603.5" cy="110.5" r="5.79"/><circle cx="620.5" cy="110.5" r="5.74"/><circle cx="637.5" cy="110.5" r="5.76"/><circle cx="654.5" cy="110.5" r="5.84"/><circle cx="671.5" cy="110.5" r="5.99"/><circle cx="688.5" cy="110.5" r="6.18"/><circle cx="705.5" cy="110.5" r="6.41"/><circle cx="722.5" cy="110.5" r="6.66"/><circle cx="739.5" cy="110.5" r="6.93"/><circle cx="756.5" cy="110.5" r="7.19"/><circle cx="773.5" cy="110.5" r="7.43"/><circle cx="790.5" cy="110.5" r="7.66"/><circle cx="807.5" cy="110.5" r="7.85"/><circle cx="824.5" cy="110.5" r="8.01"/><circle cx="841.5" cy="110.5" r="8.13"/><circle cx="858.5" cy="110.5" r="8.19"/><circle cx="875.5" cy="110.5" r="8.22"/><circle cx="892.5" cy="110.5" r="8.19"/><circle cx="909.5" cy="110.5" r="8.12"/><circle cx="926.5" cy="110.5" r="8.00"/><circle cx="943.5" cy="110.5" r="7.84"/><circle cx="960.5" cy="110.5" r="7.65"/><circle cx="977.5" cy="110.5" r="7.42"/><circle cx="994.5" cy="110.5" r="7.17"/><circle cx="1011.5" cy="110.5" r="6.91"/><circle cx="1028.5" cy="110.5" r="6.65"/><circle cx="1045.5" cy="110.5" r="6.39"/><circle cx="1062.5" cy="110.5" r="6.17"/><circle cx="1079.5" cy="110.5" r="5.98"/><circle cx="1096.5" cy="110.5" r="5.84"/><circle cx="1113.5" cy="110.5" r="5.76"/><circle cx="1130.5" cy="110.5" r="5.74"/><circle cx="1147.5" cy="110.5" r="5.80"/><circle cx="1164.5" cy="110.5" r="5.92"/><circle cx="1181.5" cy="110.5" r="6.09"/><circle cx="1198.5" cy="110.5" r="6.31"/><circle cx="1215.5" cy="110.5" r="6.56"/><circle cx="8.5" cy="127.5" r="8.17"/><circle cx="25.5" cy="127.5" r="7.95"/><circle cx="42.5" cy="127.5" r="7.73"/><circle cx="59.5" cy="127.5" r="7.54"/><circle cx="76.5" cy="127.5" r="7.38"/><circle cx="93.5" cy="127.5" r="7.26"/><circle cx="110.5" cy="127.5" r="7.18"/><circle cx="127.5" cy="127.5" r="7.16"/><circle cx="144.5" cy="127.5" r="7.20"/><circle cx="161.5" cy="127.5" r="7.29"/><circle cx="178.5" cy="127.5" r="7.42"/><circle cx="195.5" cy="127.5" r="7.59"/><circle cx="212.5" cy="127.5" r="7.79"/><circle cx="229.5" cy="127.5" r="8.01"/><circle cx="246.5" cy="127.5" r="8.24"/><circle cx="263.5" cy="127.5" r="8.46"/><circle cx="280.5" cy="127.5" r="8.66"/><circle cx="297.5" cy="127.5" r="8.85"/><circle cx="314.5" cy="127.5" r="9.01"/><circle cx="331.5" cy="127.5" r="9.13"/><circle cx="348.5" cy="127.5" r="9.18"/><circle cx="365.5" cy="127.5" r="9.18"/><circle cx="382.5" cy="127.5" r="9.18"/><circle cx="399.5" cy="127.5" r="9.18"/><circle cx="416.5" cy="127.5" r="9.14"/><circle cx="433.5" cy="127.5" r="9.02"/><circle cx="450.5" cy="127.5" r="8.87"/><circle cx="467.5" cy="127.5" r="8.69"/><circle cx="484.5" cy="127.5" r="8.48"/><circle cx="501.5" cy="127.5" r="8.26"/><circle cx="518.5" cy="127.5" r="8.04"/><circle cx="535.5" cy="127.5" r="7.82"/><circle cx="552.5" cy="127.5" r="7.62"/><circle cx="569.5" cy="127.5" r="7.44"/><circle cx="586.5" cy="127.5" r="7.30"/><circle cx="603.5" cy="127.5" r="7.21"/><circle cx="620.5" cy="127.5" r="7.17"/><circle cx="637.5" cy="127.5" r="7.18"/><circle cx="654.5" cy="127.5" r="7.25"/><circle cx="671.5" cy="127.5" r="7.36"/><circle cx="688.5" cy="127.5" r="7.52"/><circle cx="705.5" cy="127.5" r="7.71"/><circle cx="722.5" cy="127.5" r="7.92"/><circle cx="739.5" cy="127.5" r="8.14"/><circle cx="756.5" cy="127.5" r="8.37"/><circle cx="773.5" cy="127.5" r="8.58"/><circle cx="790.5" cy="127.5" r="8.78"/><circle cx="807.5" cy="127.5" r="8.95"/><circle cx="824.5" cy="127.5" r="9.08"/><circle cx="841.5" cy="127.5" r="9.18"/><circle cx="858.5" cy="127.5" r="9.18"/><circle cx="875.5" cy="127.5" r="9.18"/><circle cx="892.5" cy="127.5" r="9.18"/><circle cx="909.5" cy="127.5" r="9.18"/><circle cx="926.5" cy="127.5" r="9.08"/><circle cx="943.5" cy="127.5" r="8.94"/><circle cx="960.5" cy="127.5" r="8.77"/><circle cx="977.5" cy="127.5" r="8.57"/><circle cx="994.5" cy="127.5" r="8.35"/><circle cx="1011.5" cy="127.5" r="8.13"/><circle cx="1028.5" cy="127.5" r="7.91"/><circle cx="1045.5" cy="127.5" r="7.70"/><circle cx="1062.5" cy="127.5" r="7.51"/><circle cx="1079.5" cy="127.5" r="7.35"/><circle cx="1096.5" cy="127.5" r="7.24"/><circle cx="1113.5" cy="127.5" r="7.18"/><circle cx="1130.5" cy="127.5" r="7.17"/><circle cx="1147.5" cy="127.5" r="7.21"/><circle cx="1164.5" cy="127.5" r="7.31"/><circle cx="1181.5" cy="127.5" r="7.45"/><circle cx="1198.5" cy="127.5" r="7.63"/><circle cx="1215.5" cy="127.5" r="7.83"/><circle cx="8.5" cy="144.5" r="9.18"/><circle cx="25.5" cy="144.5" r="9.03"/><circle cx="42.5" cy="144.5" r="8.84"/><circle cx="59.5" cy="144.5" r="8.67"/><circle cx="76.5" cy="144.5" r="8.53"/><circle cx="93.5" cy="144.5" r="8.43"/><circle cx="110.5" cy="144.5" r="8.36"/><circle cx="127.5" cy="144.5" r="8.35"/><circle cx="144.5" cy="144.5" r="8.38"/><circle cx="161.5" cy="144.5" r="8.45"/><circle cx="178.5" cy="144.5" r="8.57"/><circle cx="195.5" cy="144.5" r="8.72"/><circle cx="212.5" cy="144.5" r="8.90"/><circle cx="229.5" cy="144.5" r="9.09"/><circle cx="246.5" cy="144.5" r="9.18"/><circle cx="263.5" cy="144.5" r="9.18"/><circle cx="280.5" cy="144.5" r="9.18"/><circle cx="297.5" cy="144.5" r="9.18"/><circle cx="314.5" cy="144.5" r="9.18"/><circle cx="331.5" cy="144.5" r="9.18"/><circle cx="348.5" cy="144.5" r="9.18"/><circle cx="365.5" cy="144.5" r="9.18"/><circle cx="382.5" cy="144.5" r="9.18"/><circle cx="399.5" cy="144.5" r="9.18"/><circle cx="416.5" cy="144.5" r="9.18"/><circle cx="433.5" cy="144.5" r="9.18"/><circle cx="450.5" cy="144.5" r="9.18"/><circle cx="467.5" cy="144.5" r="9.18"/><circle cx="484.5" cy="144.5" r="9.18"/><circle cx="501.5" cy="144.5" r="9.18"/><circle cx="518.5" cy="144.5" r="9.11"/><circle cx="535.5" cy="144.5" r="8.92"/><circle cx="552.5" cy="144.5" r="8.74"/><circle cx="569.5" cy="144.5" r="8.59"/><circle cx="586.5" cy="144.5" r="8.47"/><circle cx="603.5" cy="144.5" r="8.39"/><circle cx="620.5" cy="144.5" r="8.35"/><circle cx="637.5" cy="144.5" r="8.36"/><circle cx="654.5" cy="144.5" r="8.42"/><circle cx="671.5" cy="144.5" r="8.52"/><circle cx="688.5" cy="144.5" r="8.65"/><circle cx="705.5" cy="144.5" r="8.82"/><circle cx="722.5" cy="144.5" r="9.01"/><circle cx="739.5" cy="144.5" r="9.18"/><circle cx="756.5" cy="144.5" r="9.18"/><circle cx="773.5" cy="144.5" r="9.18"/><circle cx="790.5" cy="144.5" r="9.18"/><circle cx="807.5" cy="144.5" r="9.18"/><circle cx="824.5" cy="144.5" r="9.18"/><circle cx="841.5" cy="144.5" r="9.18"/><circle cx="858.5" cy="144.5" r="9.18"/><circle cx="875.5" cy="144.5" r="9.18"/><circle cx="892.5" cy="144.5" r="9.18"/><circle cx="909.5" cy="144.5" r="9.18"/><circle cx="926.5" cy="144.5" r="9.18"/><circle cx="943.5" cy="144.5" r="9.18"/><circle cx="960.5" cy="144.5" r="9.18"/><circle cx="977.5" cy="144.5" r="9.18"/><circle cx="994.5" cy="144.5" r="9.18"/><circle cx="1011.5" cy="144.5" r="9.18"/><circle cx="1028.5" cy="144.5" r="9.00"/><circle cx="1045.5" cy="144.5" r="8.81"/><circle cx="1062.5" cy="144.5" r="8.65"/><circle cx="1079.5" cy="144.5" r="8.51"/><circle cx="1096.5" cy="144.5" r="8.41"/><circle cx="1113.5" cy="144.5" r="8.36"/><circle cx="1130.5" cy="144.5" r="8.35"/><circle cx="1147.5" cy="144.5" r="8.39"/><circle cx="1164.5" cy="144.5" r="8.47"/><circle cx="1181.5" cy="144.5" r="8.59"/><circle cx="1198.5" cy="144.5" r="8.75"/><circle cx="1215.5" cy="144.5" r="8.93"/><circle cx="8.5" cy="161.5" r="9.18"/><circle cx="25.5" cy="161.5" r="9.18"/><circle cx="42.5" cy="161.5" r="9.18"/><circle cx="59.5" cy="161.5" r="9.18"/><circle cx="76.5" cy="161.5" r="9.18"/><circle cx="93.5" cy="161.5" r="9.18"/><circle cx="110.5" cy="161.5" r="9.18"/><circle cx="127.5" cy="161.5" r="9.18"/><circle cx="144.5" cy="161.5" r="9.18"/><circle cx="161.5" cy="161.5" r="9.18"/><circle cx="178.5" cy="161.5" r="9.18"/><circle cx="195.5" cy="161.5" r="9.18"/><circle cx="212.5" cy="161.5" r="9.18"/><circle cx="229.5" cy="161.5" r="9.18"/><circle cx="246.5" cy="161.5" r="9.18"/><circle cx="263.5" cy="161.5" r="9.18"/><circle cx="280.5" cy="161.5" r="9.18"/><circle cx="297.5" cy="161.5" r="9.18"/><circle cx="314.5" cy="161.5" r="9.18"/><circle cx="331.5" cy="161.5" r="9.18"/><circle cx="348.5" cy="161.5" r="9.18"/><circle cx="365.5" cy="161.5" r="9.18"/><circle cx="382.5" cy="161.5" r="9.18"/><circle cx="399.5" cy="161.5" r="9.18"/><circle cx="416.5" cy="161.5" r="9.18"/><circle cx="433.5" cy="161.5" r="9.18"/><circle cx="450.5" cy="161.5" r="9.18"/><circle cx="467.5" cy="161.5" r="9.18"/><circle cx="484.5" cy="161.5" r="9.18"/><circle cx="501.5" cy="161.5" r="9.18"/><circle cx="518.5" cy="161.5" r="9.18"/><circle cx="535.5" cy="161.5" r="9.18"/><circle cx="552.5" cy="161.5" r="9.18"/><circle cx="569.5" cy="161.5" r="9.18"/><circle cx="586.5" cy="161.5" r="9.18"/><circle cx="603.5" cy="161.5" r="9.18"/><circle cx="620.5" cy="161.5" r="9.18"/><circle cx="637.5" cy="161.5" r="9.18"/><circle cx="654.5" cy="161.5" r="9.18"/><circle cx="671.5" cy="161.5" r="9.18"/><circle cx="688.5" cy="161.5" r="9.18"/><circle cx="705.5" cy="161.5" r="9.18"/><circle cx="722.5" cy="161.5" r="9.18"/><circle cx="739.5" cy="161.5" r="9.18"/><circle cx="756.5" cy="161.5" r="9.18"/><circle cx="773.5" cy="161.5" r="9.18"/><circle cx="790.5" cy="161.5" r="9.18"/><circle cx="807.5" cy="161.5" r="9.18"/><circle cx="824.5" cy="161.5" r="9.18"/><circle cx="841.5" cy="161.5" r="9.18"/><circle cx="858.5" cy="161.5" r="9.18"/><circle cx="875.5" cy="161.5" r="9.18"/><circle cx="892.5" cy="161.5" r="9.18"/><circle cx="909.5" cy="161.5" r="9.18"/><circle cx="926.5" cy="161.5" r="9.18"/><circle cx="943.5" cy="161.5" r="9.18"/><circle cx="960.5" cy="161.5" r="9.18"/><circle cx="977.5" cy="161.5" r="9.18"/><circle cx="994.5" cy="161.5" r="9.18"/><circle cx="1011.5" cy="161.5" r="9.18"/><circle cx="1028.5" cy="161.5" r="9.18"/><circle cx="1045.5" cy="161.5" r="9.18"/><circle cx="1062.5" cy="161.5" r="9.18"/><circle cx="1079.5" cy="161.5" r="9.18"/><circle cx="1096.5" cy="161.5" r="9.18"/><circle cx="1113.5" cy="161.5" r="9.18"/><circle cx="1130.5" cy="161.5" r="9.18"/><circle cx="1147.5" cy="161.5" r="9.18"/><circle cx="1164.5" cy="161.5" r="9.18"/><circle cx="1181.5" cy="161.5" r="9.18"/><circle cx="1198.5" cy="161.5" r="9.18"/><circle cx="1215.5" cy="161.5" r="9.18"/></g></svg></div>
+
+  <section class="band" id="majlis">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <span class="eyebrow">Untuk Setiap Majlis</span>
+        <h2>Dari "Happy Birthday" hingga "Be Happy".</h2>
+        <p>Kad ucapan, warna reben dan susunan bunga — semuanya boleh disesuaikan mengikut tema majlis anda.</p>
+      </div>
+
+      <div class="occ-grid reveal">
+        <div class="occ-card">
+          <div class="occ-cutout"><img src="images/photo-13.webp" alt="Buket belon peribadi dan choc pop untuk hari jadi" class="parallax-item" data-speed="0.06" /></div>
+          <div class="occ-name">Hari Jadi</div>
+          <div class="occ-desc">Belon dicetak nama + choc pop berlapis coklat.</div>
+        </div>
+        <div class="occ-card">
+          <div class="occ-cutout"><img src="images/photo-14.webp" alt="Kotak hati strawberi dilapik coklat untuk ulang tahun" class="parallax-item" data-speed="0.1" /></div>
+          <div class="occ-name">Kasih &amp; Ulang Tahun</div>
+          <div class="occ-desc">Strawberi dilapik coklat, bunga &amp; hiasan rama-rama.</div>
+        </div>
+        <div class="occ-card">
+          <div class="occ-cutout"><img src="images/photo-15.webp" alt="Hamper rotan untuk hadiah korporat dan raya" class="parallax-item" data-speed="0.06" /></div>
+          <div class="occ-name">Korporat &amp; Raya</div>
+          <div class="occ-desc">Hamper eksklusif untuk pelanggan &amp; staf kesayangan.</div>
+        </div>
+      </div>
+
+      <div class="band-note reveal">
+        <p>Kad ucapan turut boleh disesuaikan — pilihan reben, warna tema dan tulisan nama peribadi tersedia untuk hampir semua siri hadiah kami.</p>
+        <a class="btn btn-on-indigo" href="https://wa.me/601120723156?text=Hai%20Maam's%20Delight!%20Saya%20nak%20tanya%20tentang%20customization%20kad%20%26%20hiasan." target="_blank" rel="noopener">Tanya Customization</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-dots dots-teal-out" aria-hidden="true"><svg viewBox="0 0 1200 150" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><circle cx="8.5" cy="8.5" r="9.18"/><circle cx="25.5" cy="8.5" r="9.18"/><circle cx="42.5" cy="8.5" r="9.18"/><circle cx="59.5" cy="8.5" r="9.18"/><circle cx="76.5" cy="8.5" r="9.18"/><circle cx="93.5" cy="8.5" r="9.18"/><circle cx="110.5" cy="8.5" r="9.18"/><circle cx="127.5" cy="8.5" r="9.18"/><circle cx="144.5" cy="8.5" r="9.18"/><circle cx="161.5" cy="8.5" r="9.18"/><circle cx="178.5" cy="8.5" r="9.18"/><circle cx="195.5" cy="8.5" r="9.18"/><circle cx="212.5" cy="8.5" r="9.18"/><circle cx="229.5" cy="8.5" r="9.18"/><circle cx="246.5" cy="8.5" r="9.18"/><circle cx="263.5" cy="8.5" r="8.99"/><circle cx="280.5" cy="8.5" r="8.79"/><circle cx="297.5" cy="8.5" r="8.60"/><circle cx="314.5" cy="8.5" r="8.44"/><circle cx="331.5" cy="8.5" r="8.30"/><circle cx="348.5" cy="8.5" r="8.21"/><circle cx="365.5" cy="8.5" r="8.16"/><circle cx="382.5" cy="8.5" r="8.16"/><circle cx="399.5" cy="8.5" r="8.20"/><circle cx="416.5" cy="8.5" r="8.29"/><circle cx="433.5" cy="8.5" r="8.42"/><circle cx="450.5" cy="8.5" r="8.58"/><circle cx="467.5" cy="8.5" r="8.77"/><circle cx="484.5" cy="8.5" r="8.97"/><circle cx="501.5" cy="8.5" r="9.17"/><circle cx="518.5" cy="8.5" r="9.18"/><circle cx="535.5" cy="8.5" r="9.18"/><circle cx="552.5" cy="8.5" r="9.18"/><circle cx="569.5" cy="8.5" r="9.18"/><circle cx="586.5" cy="8.5" r="9.18"/><circle cx="603.5" cy="8.5" r="9.18"/><circle cx="620.5" cy="8.5" r="9.18"/><circle cx="637.5" cy="8.5" r="9.18"/><circle cx="654.5" cy="8.5" r="9.18"/><circle cx="671.5" cy="8.5" r="9.18"/><circle cx="688.5" cy="8.5" r="9.18"/><circle cx="705.5" cy="8.5" r="9.18"/><circle cx="722.5" cy="8.5" r="9.18"/><circle cx="739.5" cy="8.5" r="9.18"/><circle cx="756.5" cy="8.5" r="9.07"/><circle cx="773.5" cy="8.5" r="8.87"/><circle cx="790.5" cy="8.5" r="8.68"/><circle cx="807.5" cy="8.5" r="8.50"/><circle cx="824.5" cy="8.5" r="8.36"/><circle cx="841.5" cy="8.5" r="8.24"/><circle cx="858.5" cy="8.5" r="8.17"/><circle cx="875.5" cy="8.5" r="8.15"/><circle cx="892.5" cy="8.5" r="8.18"/><circle cx="909.5" cy="8.5" r="8.25"/><circle cx="926.5" cy="8.5" r="8.36"/><circle cx="943.5" cy="8.5" r="8.51"/><circle cx="960.5" cy="8.5" r="8.69"/><circle cx="977.5" cy="8.5" r="8.88"/><circle cx="994.5" cy="8.5" r="9.09"/><circle cx="1011.5" cy="8.5" r="9.18"/><circle cx="1028.5" cy="8.5" r="9.18"/><circle cx="1045.5" cy="8.5" r="9.18"/><circle cx="1062.5" cy="8.5" r="9.18"/><circle cx="1079.5" cy="8.5" r="9.18"/><circle cx="1096.5" cy="8.5" r="9.18"/><circle cx="1113.5" cy="8.5" r="9.18"/><circle cx="1130.5" cy="8.5" r="9.18"/><circle cx="1147.5" cy="8.5" r="9.18"/><circle cx="1164.5" cy="8.5" r="9.18"/><circle cx="1181.5" cy="8.5" r="9.18"/><circle cx="1198.5" cy="8.5" r="9.18"/><circle cx="1215.5" cy="8.5" r="9.18"/><circle cx="8.5" cy="25.5" r="8.20"/><circle cx="25.5" cy="25.5" r="8.41"/><circle cx="42.5" cy="25.5" r="8.61"/><circle cx="59.5" cy="25.5" r="8.78"/><circle cx="76.5" cy="25.5" r="8.92"/><circle cx="93.5" cy="25.5" r="9.02"/><circle cx="110.5" cy="25.5" r="9.08"/><circle cx="127.5" cy="25.5" r="9.09"/><circle cx="144.5" cy="25.5" r="9.06"/><circle cx="161.5" cy="25.5" r="8.99"/><circle cx="178.5" cy="25.5" r="8.88"/><circle cx="195.5" cy="25.5" r="8.73"/><circle cx="212.5" cy="25.5" r="8.56"/><circle cx="229.5" cy="25.5" r="8.35"/><circle cx="246.5" cy="25.5" r="8.13"/><circle cx="263.5" cy="25.5" r="7.90"/><circle cx="280.5" cy="25.5" r="7.67"/><circle cx="297.5" cy="25.5" r="7.46"/><circle cx="314.5" cy="25.5" r="7.27"/><circle cx="331.5" cy="25.5" r="7.11"/><circle cx="348.5" cy="25.5" r="7.00"/><circle cx="365.5" cy="25.5" r="6.94"/><circle cx="382.5" cy="25.5" r="6.94"/><circle cx="399.5" cy="25.5" r="6.99"/><circle cx="416.5" cy="25.5" r="7.10"/><circle cx="433.5" cy="25.5" r="7.25"/><circle cx="450.5" cy="25.5" r="7.44"/><circle cx="467.5" cy="25.5" r="7.65"/><circle cx="484.5" cy="25.5" r="7.88"/><circle cx="501.5" cy="25.5" r="8.10"/><circle cx="518.5" cy="25.5" r="8.33"/><circle cx="535.5" cy="25.5" r="8.53"/><circle cx="552.5" cy="25.5" r="8.72"/><circle cx="569.5" cy="25.5" r="8.87"/><circle cx="586.5" cy="25.5" r="8.98"/><circle cx="603.5" cy="25.5" r="9.06"/><circle cx="620.5" cy="25.5" r="9.09"/><circle cx="637.5" cy="25.5" r="9.08"/><circle cx="654.5" cy="25.5" r="9.03"/><circle cx="671.5" cy="25.5" r="8.93"/><circle cx="688.5" cy="25.5" r="8.80"/><circle cx="705.5" cy="25.5" r="8.63"/><circle cx="722.5" cy="25.5" r="8.44"/><circle cx="739.5" cy="25.5" r="8.22"/><circle cx="756.5" cy="25.5" r="8.00"/><circle cx="773.5" cy="25.5" r="7.77"/><circle cx="790.5" cy="25.5" r="7.55"/><circle cx="807.5" cy="25.5" r="7.34"/><circle cx="824.5" cy="25.5" r="7.17"/><circle cx="841.5" cy="25.5" r="7.04"/><circle cx="858.5" cy="25.5" r="6.96"/><circle cx="875.5" cy="25.5" r="6.93"/><circle cx="892.5" cy="25.5" r="6.96"/><circle cx="909.5" cy="25.5" r="7.05"/><circle cx="926.5" cy="25.5" r="7.18"/><circle cx="943.5" cy="25.5" r="7.36"/><circle cx="960.5" cy="25.5" r="7.56"/><circle cx="977.5" cy="25.5" r="7.78"/><circle cx="994.5" cy="25.5" r="8.01"/><circle cx="1011.5" cy="25.5" r="8.24"/><circle cx="1028.5" cy="25.5" r="8.45"/><circle cx="1045.5" cy="25.5" r="8.64"/><circle cx="1062.5" cy="25.5" r="8.81"/><circle cx="1079.5" cy="25.5" r="8.94"/><circle cx="1096.5" cy="25.5" r="9.03"/><circle cx="1113.5" cy="25.5" r="9.08"/><circle cx="1130.5" cy="25.5" r="9.09"/><circle cx="1147.5" cy="25.5" r="9.05"/><circle cx="1164.5" cy="25.5" r="8.98"/><circle cx="1181.5" cy="25.5" r="8.86"/><circle cx="1198.5" cy="25.5" r="8.71"/><circle cx="1215.5" cy="25.5" r="8.52"/><circle cx="8.5" cy="42.5" r="6.99"/><circle cx="25.5" cy="42.5" r="7.24"/><circle cx="42.5" cy="42.5" r="7.47"/><circle cx="59.5" cy="42.5" r="7.66"/><circle cx="76.5" cy="42.5" r="7.82"/><circle cx="93.5" cy="42.5" r="7.93"/><circle cx="110.5" cy="42.5" r="8.00"/><circle cx="127.5" cy="42.5" r="8.02"/><circle cx="144.5" cy="42.5" r="7.99"/><circle cx="161.5" cy="42.5" r="7.91"/><circle cx="178.5" cy="42.5" r="7.78"/><circle cx="195.5" cy="42.5" r="7.61"/><circle cx="212.5" cy="42.5" r="7.41"/><circle cx="229.5" cy="42.5" r="7.17"/><circle cx="246.5" cy="42.5" r="6.91"/><circle cx="263.5" cy="42.5" r="6.64"/><circle cx="280.5" cy="42.5" r="6.37"/><circle cx="297.5" cy="42.5" r="6.11"/><circle cx="314.5" cy="42.5" r="5.87"/><circle cx="331.5" cy="42.5" r="5.68"/><circle cx="348.5" cy="42.5" r="5.54"/><circle cx="365.5" cy="42.5" r="5.46"/><circle cx="382.5" cy="42.5" r="5.46"/><circle cx="399.5" cy="42.5" r="5.52"/><circle cx="416.5" cy="42.5" r="5.66"/><circle cx="433.5" cy="42.5" r="5.85"/><circle cx="450.5" cy="42.5" r="6.08"/><circle cx="467.5" cy="42.5" r="6.34"/><circle cx="484.5" cy="42.5" r="6.61"/><circle cx="501.5" cy="42.5" r="6.88"/><circle cx="518.5" cy="42.5" r="7.14"/><circle cx="535.5" cy="42.5" r="7.38"/><circle cx="552.5" cy="42.5" r="7.59"/><circle cx="569.5" cy="42.5" r="7.76"/><circle cx="586.5" cy="42.5" r="7.89"/><circle cx="603.5" cy="42.5" r="7.98"/><circle cx="620.5" cy="42.5" r="8.02"/><circle cx="637.5" cy="42.5" r="8.00"/><circle cx="654.5" cy="42.5" r="7.94"/><circle cx="671.5" cy="42.5" r="7.84"/><circle cx="688.5" cy="42.5" r="7.69"/><circle cx="705.5" cy="42.5" r="7.49"/><circle cx="722.5" cy="42.5" r="7.27"/><circle cx="739.5" cy="42.5" r="7.02"/><circle cx="756.5" cy="42.5" r="6.75"/><circle cx="773.5" cy="42.5" r="6.48"/><circle cx="790.5" cy="42.5" r="6.21"/><circle cx="807.5" cy="42.5" r="5.96"/><circle cx="824.5" cy="42.5" r="5.75"/><circle cx="841.5" cy="42.5" r="5.59"/><circle cx="858.5" cy="42.5" r="5.48"/><circle cx="875.5" cy="42.5" r="5.45"/><circle cx="892.5" cy="42.5" r="5.49"/><circle cx="909.5" cy="42.5" r="5.60"/><circle cx="926.5" cy="42.5" r="5.76"/><circle cx="943.5" cy="42.5" r="5.98"/><circle cx="960.5" cy="42.5" r="6.23"/><circle cx="977.5" cy="42.5" r="6.49"/><circle cx="994.5" cy="42.5" r="6.77"/><circle cx="1011.5" cy="42.5" r="7.03"/><circle cx="1028.5" cy="42.5" r="7.28"/><circle cx="1045.5" cy="42.5" r="7.51"/><circle cx="1062.5" cy="42.5" r="7.70"/><circle cx="1079.5" cy="42.5" r="7.84"/><circle cx="1096.5" cy="42.5" r="7.95"/><circle cx="1113.5" cy="42.5" r="8.01"/><circle cx="1130.5" cy="42.5" r="8.02"/><circle cx="1147.5" cy="42.5" r="7.97"/><circle cx="1164.5" cy="42.5" r="7.89"/><circle cx="1181.5" cy="42.5" r="7.75"/><circle cx="1198.5" cy="42.5" r="7.58"/><circle cx="1215.5" cy="42.5" r="7.37"/><circle cx="8.5" cy="59.5" r="5.52"/><circle cx="25.5" cy="59.5" r="5.84"/><circle cx="42.5" cy="59.5" r="6.12"/><circle cx="59.5" cy="59.5" r="6.35"/><circle cx="76.5" cy="59.5" r="6.54"/><circle cx="93.5" cy="59.5" r="6.68"/><circle cx="110.5" cy="59.5" r="6.76"/><circle cx="127.5" cy="59.5" r="6.78"/><circle cx="144.5" cy="59.5" r="6.74"/><circle cx="161.5" cy="59.5" r="6.64"/><circle cx="178.5" cy="59.5" r="6.49"/><circle cx="195.5" cy="59.5" r="6.29"/><circle cx="212.5" cy="59.5" r="6.04"/><circle cx="229.5" cy="59.5" r="5.75"/><circle cx="246.5" cy="59.5" r="5.42"/><circle cx="263.5" cy="59.5" r="5.07"/><circle cx="280.5" cy="59.5" r="4.71"/><circle cx="297.5" cy="59.5" r="4.35"/><circle cx="314.5" cy="59.5" r="4.01"/><circle cx="331.5" cy="59.5" r="3.72"/><circle cx="348.5" cy="59.5" r="3.51"/><circle cx="365.5" cy="59.5" r="3.39"/><circle cx="382.5" cy="59.5" r="3.38"/><circle cx="399.5" cy="59.5" r="3.49"/><circle cx="416.5" cy="59.5" r="3.69"/><circle cx="433.5" cy="59.5" r="3.98"/><circle cx="450.5" cy="59.5" r="4.31"/><circle cx="467.5" cy="59.5" r="4.67"/><circle cx="484.5" cy="59.5" r="5.03"/><circle cx="501.5" cy="59.5" r="5.38"/><circle cx="518.5" cy="59.5" r="5.71"/><circle cx="535.5" cy="59.5" r="6.01"/><circle cx="552.5" cy="59.5" r="6.26"/><circle cx="569.5" cy="59.5" r="6.47"/><circle cx="586.5" cy="59.5" r="6.63"/><circle cx="603.5" cy="59.5" r="6.73"/><circle cx="620.5" cy="59.5" r="6.77"/><circle cx="637.5" cy="59.5" r="6.76"/><circle cx="654.5" cy="59.5" r="6.69"/><circle cx="671.5" cy="59.5" r="6.56"/><circle cx="688.5" cy="59.5" r="6.38"/><circle cx="705.5" cy="59.5" r="6.15"/><circle cx="722.5" cy="59.5" r="5.87"/><circle cx="739.5" cy="59.5" r="5.56"/><circle cx="756.5" cy="59.5" r="5.22"/><circle cx="773.5" cy="59.5" r="4.86"/><circle cx="790.5" cy="59.5" r="4.50"/><circle cx="807.5" cy="59.5" r="4.15"/><circle cx="824.5" cy="59.5" r="3.84"/><circle cx="841.5" cy="59.5" r="3.59"/><circle cx="858.5" cy="59.5" r="3.42"/><circle cx="875.5" cy="59.5" r="3.37"/><circle cx="892.5" cy="59.5" r="3.43"/><circle cx="909.5" cy="59.5" r="3.60"/><circle cx="926.5" cy="59.5" r="3.85"/><circle cx="943.5" cy="59.5" r="4.17"/><circle cx="960.5" cy="59.5" r="4.52"/><circle cx="977.5" cy="59.5" r="4.88"/><circle cx="994.5" cy="59.5" r="5.24"/><circle cx="1011.5" cy="59.5" r="5.58"/><circle cx="1028.5" cy="59.5" r="5.89"/><circle cx="1045.5" cy="59.5" r="6.16"/><circle cx="1062.5" cy="59.5" r="6.39"/><circle cx="1079.5" cy="59.5" r="6.57"/><circle cx="1096.5" cy="59.5" r="6.69"/><circle cx="1113.5" cy="59.5" r="6.76"/><circle cx="1130.5" cy="59.5" r="6.77"/><circle cx="1147.5" cy="59.5" r="6.73"/><circle cx="1164.5" cy="59.5" r="6.62"/><circle cx="1181.5" cy="59.5" r="6.46"/><circle cx="1198.5" cy="59.5" r="6.25"/><circle cx="1215.5" cy="59.5" r="5.99"/><circle cx="8.5" cy="76.5" r="3.48"/><circle cx="25.5" cy="76.5" r="3.96"/><circle cx="42.5" cy="76.5" r="4.37"/><circle cx="59.5" cy="76.5" r="4.69"/><circle cx="76.5" cy="76.5" r="4.94"/><circle cx="93.5" cy="76.5" r="5.12"/><circle cx="110.5" cy="76.5" r="5.22"/><circle cx="127.5" cy="76.5" r="5.25"/><circle cx="144.5" cy="76.5" r="5.20"/><circle cx="161.5" cy="76.5" r="5.08"/><circle cx="178.5" cy="76.5" r="4.88"/><circle cx="195.5" cy="76.5" r="4.60"/><circle cx="212.5" cy="76.5" r="4.26"/><circle cx="229.5" cy="76.5" r="3.83"/><circle cx="246.5" cy="76.5" r="3.32"/><circle cx="263.5" cy="76.5" r="2.71"/><circle cx="280.5" cy="76.5" r="1.95"/><circle cx="467.5" cy="76.5" r="1.84"/><circle cx="484.5" cy="76.5" r="2.63"/><circle cx="501.5" cy="76.5" r="3.25"/><circle cx="518.5" cy="76.5" r="3.77"/><circle cx="535.5" cy="76.5" r="4.21"/><circle cx="552.5" cy="76.5" r="4.57"/><circle cx="569.5" cy="76.5" r="4.85"/><circle cx="586.5" cy="76.5" r="5.06"/><circle cx="603.5" cy="76.5" r="5.19"/><circle cx="620.5" cy="76.5" r="5.25"/><circle cx="637.5" cy="76.5" r="5.23"/><circle cx="654.5" cy="76.5" r="5.14"/><circle cx="671.5" cy="76.5" r="4.97"/><circle cx="688.5" cy="76.5" r="4.73"/><circle cx="705.5" cy="76.5" r="4.41"/><circle cx="722.5" cy="76.5" r="4.01"/><circle cx="739.5" cy="76.5" r="3.54"/><circle cx="756.5" cy="76.5" r="2.98"/><circle cx="773.5" cy="76.5" r="2.29"/><circle cx="790.5" cy="76.5" r="1.36"/><circle cx="960.5" cy="76.5" r="1.43"/><circle cx="977.5" cy="76.5" r="2.33"/><circle cx="994.5" cy="76.5" r="3.01"/><circle cx="1011.5" cy="76.5" r="3.57"/><circle cx="1028.5" cy="76.5" r="4.04"/><circle cx="1045.5" cy="76.5" r="4.43"/><circle cx="1062.5" cy="76.5" r="4.74"/><circle cx="1079.5" cy="76.5" r="4.98"/><circle cx="1096.5" cy="76.5" r="5.14"/><circle cx="1113.5" cy="76.5" r="5.23"/><circle cx="1130.5" cy="76.5" r="5.24"/><circle cx="1147.5" cy="76.5" r="5.18"/><circle cx="1164.5" cy="76.5" r="5.05"/><circle cx="1181.5" cy="76.5" r="4.83"/><circle cx="1198.5" cy="76.5" r="4.55"/><circle cx="1215.5" cy="76.5" r="4.19"/><circle cx="59.5" cy="93.5" r="1.91"/><circle cx="76.5" cy="93.5" r="2.46"/><circle cx="93.5" cy="93.5" r="2.80"/><circle cx="110.5" cy="93.5" r="2.98"/><circle cx="127.5" cy="93.5" r="3.03"/><circle cx="144.5" cy="93.5" r="2.94"/><circle cx="161.5" cy="93.5" r="2.72"/><circle cx="178.5" cy="93.5" r="2.33"/><circle cx="195.5" cy="93.5" r="1.68"/><circle cx="552.5" cy="93.5" r="1.58"/><circle cx="569.5" cy="93.5" r="2.27"/><circle cx="586.5" cy="93.5" r="2.68"/><circle cx="603.5" cy="93.5" r="2.93"/><circle cx="620.5" cy="93.5" r="3.03"/><circle cx="637.5" cy="93.5" r="3.00"/><circle cx="654.5" cy="93.5" r="2.83"/><circle cx="671.5" cy="93.5" r="2.51"/><circle cx="688.5" cy="93.5" r="1.99"/><circle cx="1062.5" cy="93.5" r="2.03"/><circle cx="1079.5" cy="93.5" r="2.54"/><circle cx="1096.5" cy="93.5" r="2.84"/><circle cx="1113.5" cy="93.5" r="3.00"/><circle cx="1130.5" cy="93.5" r="3.02"/><circle cx="1147.5" cy="93.5" r="2.91"/><circle cx="1164.5" cy="93.5" r="2.66"/><circle cx="1181.5" cy="93.5" r="2.24"/><circle cx="1198.5" cy="93.5" r="1.52"/></g></svg></div>
+
+  <section class="class-sec" id="kelas" style="background:color-mix(in srgb, var(--indigo) 7%, var(--cream));">
+    <div class="container class-layout">
+      <div class="class-photo reveal">
+        <div class="class-photo-frame">
+          <img src="images/photo-16.jpg" alt="Maam mengajar sekumpulan kanak-kanak membuat coklat sendiri di sesi Chocolate Making Class" loading="lazy" />
+          <div class="class-photo-badge" aria-hidden="true">Aktiviti<br>Sebenar!</div>
+        </div>
+      </div>
+      <div class="class-copy reveal">
+        <span class="eyebrow">Kelas &amp; Aktiviti</span>
+        <h2>Chocolate Making Class — seronok untuk si kecil (dan yang besar!)</h2>
+        <p>Selain tempahan, Maam's Delight turut menganjurkan sesi membuat coklat yang mesra kanak-kanak. Si kecil belajar tuang, hias dan bungkus coklat mereka sendiri untuk dibawa balik — pengalaman yang manis untuk dikongsi.</p>
+        <ul class="class-points">
+          <li>Sesuai untuk parti hari jadi &amp; aktiviti cuti sekolah</li>
+          <li>Boleh diatur untuk kumpulan kecil atau kelas sekolah</li>
+          <li>Setiap peserta bawa balik hasil coklat sendiri</li>
+          <li>Tema &amp; bahan boleh disesuaikan mengikut umur peserta</li>
+        </ul>
+        <a class="btn btn-primary" href="https://wa.me/601120723156?text=Hai%20Maam's%20Delight!%20Saya%20nak%20tanya%20tentang%20Chocolate%20Making%20Class." target="_blank" rel="noopener">Tanya Kami Tentang Kelas</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps" id="tempah">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <span class="eyebrow">Cara Tempah</span>
+        <h2>Tiga langkah mudah ke kotak coklat anda.</h2>
+      </div>
+      <div class="step-row reveal">
+        <div class="step-card">
+          <span class="step-num">01</span>
+          <h4>WhatsApp &amp; Kongsi Citarasa</h4>
+          <p>Beritahu kami majlis, perisa pilihan dan bujet anda — atau guna senarai perisa yang anda pilih di atas.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">02</span>
+          <h4>Kami Cadangkan &amp; Sebut Harga</h4>
+          <p>Kami akan cadangkan pakej yang sesuai dan berikan sebut harga penuh, termasuk customization.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">03</span>
+          <h4>Siap, Self-Collect atau Dihantar</h4>
+          <p>Kami siapkan tempahan anda dengan kemas — sedia untuk self-collect atau diatur penghantaran.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <span class="eyebrow">Soalan Lazim</span>
+        <h2>Sebelum anda WhatsApp kami.</h2>
+      </div>
+      <div class="faq-list reveal" id="faqList">
+        <div class="faq-item">
+          <button class="faq-q"><span>Berapa lama tempoh penyediaan tempahan?</span><span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Tempoh penyediaan bergantung pada saiz dan kerumitan tempahan. Untuk majlis besar seperti perkahwinan atau hantaran, kami sarankan hubungi kami seawal mungkin supaya dapat dirancang dengan baik.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span>Bolehkah saya campur perisa &amp; sesuaikan pembungkusan?</span><span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Boleh! Kebanyakan siri kami terbuka untuk kombinasi perisa, warna reben, dan kad ucapan peribadi — beritahu kami tema majlis anda semasa berbincang.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span>Adakah penghantaran disediakan?</span><span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Ya. Self-collect dan penghantaran boleh diatur — sila kongsikan lokasi anda semasa berhubung dengan kami untuk kami cadangkan pilihan terbaik.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span>Macam mana saya boleh dapatkan harga?</span><span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Setiap pakej disebut harga mengikut saiz, perisa dan customization yang dipilih. WhatsApp kami dengan butiran tempahan anda untuk sebut harga percuma.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-dots dots-cocoa-in" aria-hidden="true"><svg viewBox="0 0 1200 150" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><circle cx="297.5" cy="59.5" r="2.20"/><circle cx="314.5" cy="59.5" r="2.77"/><circle cx="331.5" cy="59.5" r="3.15"/><circle cx="348.5" cy="59.5" r="3.39"/><circle cx="365.5" cy="59.5" r="3.51"/><circle cx="382.5" cy="59.5" r="3.51"/><circle cx="399.5" cy="59.5" r="3.41"/><circle cx="416.5" cy="59.5" r="3.18"/><circle cx="433.5" cy="59.5" r="2.82"/><circle cx="450.5" cy="59.5" r="2.28"/><circle cx="467.5" cy="59.5" r="1.42"/><circle cx="790.5" cy="59.5" r="1.89"/><circle cx="807.5" cy="59.5" r="2.56"/><circle cx="824.5" cy="59.5" r="3.01"/><circle cx="841.5" cy="59.5" r="3.30"/><circle cx="858.5" cy="59.5" r="3.47"/><circle cx="875.5" cy="59.5" r="3.52"/><circle cx="892.5" cy="59.5" r="3.47"/><circle cx="909.5" cy="59.5" r="3.29"/><circle cx="926.5" cy="59.5" r="2.99"/><circle cx="943.5" cy="59.5" r="2.53"/><circle cx="960.5" cy="59.5" r="1.84"/><circle cx="8.5" cy="76.5" r="3.42"/><circle cx="25.5" cy="76.5" r="2.84"/><circle cx="42.5" cy="76.5" r="2.17"/><circle cx="59.5" cy="76.5" r="1.32"/><circle cx="195.5" cy="76.5" r="1.60"/><circle cx="212.5" cy="76.5" r="2.38"/><circle cx="229.5" cy="76.5" r="3.02"/><circle cx="246.5" cy="76.5" r="3.57"/><circle cx="263.5" cy="76.5" r="4.05"/><circle cx="280.5" cy="76.5" r="4.47"/><circle cx="297.5" cy="76.5" r="4.82"/><circle cx="314.5" cy="76.5" r="5.10"/><circle cx="331.5" cy="76.5" r="5.32"/><circle cx="348.5" cy="76.5" r="5.46"/><circle cx="365.5" cy="76.5" r="5.54"/><circle cx="382.5" cy="76.5" r="5.54"/><circle cx="399.5" cy="76.5" r="5.48"/><circle cx="416.5" cy="76.5" r="5.34"/><circle cx="433.5" cy="76.5" r="5.13"/><circle cx="450.5" cy="76.5" r="4.86"/><circle cx="467.5" cy="76.5" r="4.51"/><circle cx="484.5" cy="76.5" r="4.10"/><circle cx="501.5" cy="76.5" r="3.63"/><circle cx="518.5" cy="76.5" r="3.09"/><circle cx="535.5" cy="76.5" r="2.46"/><circle cx="552.5" cy="76.5" r="1.71"/><circle cx="705.5" cy="76.5" r="2.08"/><circle cx="722.5" cy="76.5" r="2.77"/><circle cx="739.5" cy="76.5" r="3.35"/><circle cx="756.5" cy="76.5" r="3.86"/><circle cx="773.5" cy="76.5" r="4.31"/><circle cx="790.5" cy="76.5" r="4.68"/><circle cx="807.5" cy="76.5" r="4.99"/><circle cx="824.5" cy="76.5" r="5.24"/><circle cx="841.5" cy="76.5" r="5.41"/><circle cx="858.5" cy="76.5" r="5.52"/><circle cx="875.5" cy="76.5" r="5.55"/><circle cx="892.5" cy="76.5" r="5.51"/><circle cx="909.5" cy="76.5" r="5.40"/><circle cx="926.5" cy="76.5" r="5.22"/><circle cx="943.5" cy="76.5" r="4.98"/><circle cx="960.5" cy="76.5" r="4.66"/><circle cx="977.5" cy="76.5" r="4.28"/><circle cx="994.5" cy="76.5" r="3.83"/><circle cx="1011.5" cy="76.5" r="3.32"/><circle cx="1028.5" cy="76.5" r="2.73"/><circle cx="1045.5" cy="76.5" r="2.04"/><circle cx="1198.5" cy="76.5" r="1.76"/><circle cx="1215.5" cy="76.5" r="2.50"/><circle cx="8.5" cy="93.5" r="5.48"/><circle cx="25.5" cy="93.5" r="5.14"/><circle cx="42.5" cy="93.5" r="4.80"/><circle cx="59.5" cy="93.5" r="4.49"/><circle cx="76.5" cy="93.5" r="4.21"/><circle cx="93.5" cy="93.5" r="3.99"/><circle cx="110.5" cy="93.5" r="3.86"/><circle cx="127.5" cy="93.5" r="3.82"/><circle cx="144.5" cy="93.5" r="3.89"/><circle cx="161.5" cy="93.5" r="4.05"/><circle cx="178.5" cy="93.5" r="4.28"/><circle cx="195.5" cy="93.5" r="4.58"/><circle cx="212.5" cy="93.5" r="4.90"/><circle cx="229.5" cy="93.5" r="5.24"/><circle cx="246.5" cy="93.5" r="5.58"/><circle cx="263.5" cy="93.5" r="5.90"/><circle cx="280.5" cy="93.5" r="6.19"/><circle cx="297.5" cy="93.5" r="6.45"/><circle cx="314.5" cy="93.5" r="6.66"/><circle cx="331.5" cy="93.5" r="6.83"/><circle cx="348.5" cy="93.5" r="6.94"/><circle cx="365.5" cy="93.5" r="7.00"/><circle cx="382.5" cy="93.5" r="7.01"/><circle cx="399.5" cy="93.5" r="6.95"/><circle cx="416.5" cy="93.5" r="6.85"/><circle cx="433.5" cy="93.5" r="6.69"/><circle cx="450.5" cy="93.5" r="6.48"/><circle cx="467.5" cy="93.5" r="6.22"/><circle cx="484.5" cy="93.5" r="5.93"/><circle cx="501.5" cy="93.5" r="5.62"/><circle cx="518.5" cy="93.5" r="5.28"/><circle cx="535.5" cy="93.5" r="4.94"/><circle cx="552.5" cy="93.5" r="4.61"/><circle cx="569.5" cy="93.5" r="4.32"/><circle cx="586.5" cy="93.5" r="4.07"/><circle cx="603.5" cy="93.5" r="3.90"/><circle cx="620.5" cy="93.5" r="3.82"/><circle cx="637.5" cy="93.5" r="3.85"/><circle cx="654.5" cy="93.5" r="3.97"/><circle cx="671.5" cy="93.5" r="4.18"/><circle cx="688.5" cy="93.5" r="4.45"/><circle cx="705.5" cy="93.5" r="4.76"/><circle cx="722.5" cy="93.5" r="5.10"/><circle cx="739.5" cy="93.5" r="5.44"/><circle cx="756.5" cy="93.5" r="5.77"/><circle cx="773.5" cy="93.5" r="6.07"/><circle cx="790.5" cy="93.5" r="6.35"/><circle cx="807.5" cy="93.5" r="6.58"/><circle cx="824.5" cy="93.5" r="6.77"/><circle cx="841.5" cy="93.5" r="6.90"/><circle cx="858.5" cy="93.5" r="6.98"/><circle cx="875.5" cy="93.5" r="7.01"/><circle cx="892.5" cy="93.5" r="6.98"/><circle cx="909.5" cy="93.5" r="6.90"/><circle cx="926.5" cy="93.5" r="6.76"/><circle cx="943.5" cy="93.5" r="6.57"/><circle cx="960.5" cy="93.5" r="6.33"/><circle cx="977.5" cy="93.5" r="6.06"/><circle cx="994.5" cy="93.5" r="5.75"/><circle cx="1011.5" cy="93.5" r="5.42"/><circle cx="1028.5" cy="93.5" r="5.08"/><circle cx="1045.5" cy="93.5" r="4.75"/><circle cx="1062.5" cy="93.5" r="4.43"/><circle cx="1079.5" cy="93.5" r="4.16"/><circle cx="1096.5" cy="93.5" r="3.96"/><circle cx="1113.5" cy="93.5" r="3.84"/><circle cx="1130.5" cy="93.5" r="3.82"/><circle cx="1147.5" cy="93.5" r="3.91"/><circle cx="1164.5" cy="93.5" r="4.08"/><circle cx="1181.5" cy="93.5" r="4.33"/><circle cx="1198.5" cy="93.5" r="4.63"/><circle cx="1215.5" cy="93.5" r="4.96"/><circle cx="8.5" cy="110.5" r="6.96"/><circle cx="25.5" cy="110.5" r="6.69"/><circle cx="42.5" cy="110.5" r="6.44"/><circle cx="59.5" cy="110.5" r="6.20"/><circle cx="76.5" cy="110.5" r="6.01"/><circle cx="93.5" cy="110.5" r="5.86"/><circle cx="110.5" cy="110.5" r="5.77"/><circle cx="127.5" cy="110.5" r="5.74"/><circle cx="144.5" cy="110.5" r="5.79"/><circle cx="161.5" cy="110.5" r="5.89"/><circle cx="178.5" cy="110.5" r="6.06"/><circle cx="195.5" cy="110.5" r="6.27"/><circle cx="212.5" cy="110.5" r="6.51"/><circle cx="229.5" cy="110.5" r="6.77"/><circle cx="246.5" cy="110.5" r="7.03"/><circle cx="263.5" cy="110.5" r="7.29"/><circle cx="280.5" cy="110.5" r="7.53"/><circle cx="297.5" cy="110.5" r="7.74"/><circle cx="314.5" cy="110.5" r="7.92"/><circle cx="331.5" cy="110.5" r="8.06"/><circle cx="348.5" cy="110.5" r="8.16"/><circle cx="365.5" cy="110.5" r="8.21"/><circle cx="382.5" cy="110.5" r="8.21"/><circle cx="399.5" cy="110.5" r="8.17"/><circle cx="416.5" cy="110.5" r="8.08"/><circle cx="433.5" cy="110.5" r="7.94"/><circle cx="450.5" cy="110.5" r="7.77"/><circle cx="467.5" cy="110.5" r="7.56"/><circle cx="484.5" cy="110.5" r="7.32"/><circle cx="501.5" cy="110.5" r="7.06"/><circle cx="518.5" cy="110.5" r="6.80"/><circle cx="535.5" cy="110.5" r="6.54"/><circle cx="552.5" cy="110.5" r="6.30"/><circle cx="569.5" cy="110.5" r="6.08"/><circle cx="586.5" cy="110.5" r="5.91"/><circle cx="603.5" cy="110.5" r="5.79"/><circle cx="620.5" cy="110.5" r="5.74"/><circle cx="637.5" cy="110.5" r="5.76"/><circle cx="654.5" cy="110.5" r="5.84"/><circle cx="671.5" cy="110.5" r="5.99"/><circle cx="688.5" cy="110.5" r="6.18"/><circle cx="705.5" cy="110.5" r="6.41"/><circle cx="722.5" cy="110.5" r="6.66"/><circle cx="739.5" cy="110.5" r="6.93"/><circle cx="756.5" cy="110.5" r="7.19"/><circle cx="773.5" cy="110.5" r="7.43"/><circle cx="790.5" cy="110.5" r="7.66"/><circle cx="807.5" cy="110.5" r="7.85"/><circle cx="824.5" cy="110.5" r="8.01"/><circle cx="841.5" cy="110.5" r="8.13"/><circle cx="858.5" cy="110.5" r="8.19"/><circle cx="875.5" cy="110.5" r="8.22"/><circle cx="892.5" cy="110.5" r="8.19"/><circle cx="909.5" cy="110.5" r="8.12"/><circle cx="926.5" cy="110.5" r="8.00"/><circle cx="943.5" cy="110.5" r="7.84"/><circle cx="960.5" cy="110.5" r="7.65"/><circle cx="977.5" cy="110.5" r="7.42"/><circle cx="994.5" cy="110.5" r="7.17"/><circle cx="1011.5" cy="110.5" r="6.91"/><circle cx="1028.5" cy="110.5" r="6.65"/><circle cx="1045.5" cy="110.5" r="6.39"/><circle cx="1062.5" cy="110.5" r="6.17"/><circle cx="1079.5" cy="110.5" r="5.98"/><circle cx="1096.5" cy="110.5" r="5.84"/><circle cx="1113.5" cy="110.5" r="5.76"/><circle cx="1130.5" cy="110.5" r="5.74"/><circle cx="1147.5" cy="110.5" r="5.80"/><circle cx="1164.5" cy="110.5" r="5.92"/><circle cx="1181.5" cy="110.5" r="6.09"/><circle cx="1198.5" cy="110.5" r="6.31"/><circle cx="1215.5" cy="110.5" r="6.56"/><circle cx="8.5" cy="127.5" r="8.17"/><circle cx="25.5" cy="127.5" r="7.95"/><circle cx="42.5" cy="127.5" r="7.73"/><circle cx="59.5" cy="127.5" r="7.54"/><circle cx="76.5" cy="127.5" r="7.38"/><circle cx="93.5" cy="127.5" r="7.26"/><circle cx="110.5" cy="127.5" r="7.18"/><circle cx="127.5" cy="127.5" r="7.16"/><circle cx="144.5" cy="127.5" r="7.20"/><circle cx="161.5" cy="127.5" r="7.29"/><circle cx="178.5" cy="127.5" r="7.42"/><circle cx="195.5" cy="127.5" r="7.59"/><circle cx="212.5" cy="127.5" r="7.79"/><circle cx="229.5" cy="127.5" r="8.01"/><circle cx="246.5" cy="127.5" r="8.24"/><circle cx="263.5" cy="127.5" r="8.46"/><circle cx="280.5" cy="127.5" r="8.66"/><circle cx="297.5" cy="127.5" r="8.85"/><circle cx="314.5" cy="127.5" r="9.01"/><circle cx="331.5" cy="127.5" r="9.13"/><circle cx="348.5" cy="127.5" r="9.18"/><circle cx="365.5" cy="127.5" r="9.18"/><circle cx="382.5" cy="127.5" r="9.18"/><circle cx="399.5" cy="127.5" r="9.18"/><circle cx="416.5" cy="127.5" r="9.14"/><circle cx="433.5" cy="127.5" r="9.02"/><circle cx="450.5" cy="127.5" r="8.87"/><circle cx="467.5" cy="127.5" r="8.69"/><circle cx="484.5" cy="127.5" r="8.48"/><circle cx="501.5" cy="127.5" r="8.26"/><circle cx="518.5" cy="127.5" r="8.04"/><circle cx="535.5" cy="127.5" r="7.82"/><circle cx="552.5" cy="127.5" r="7.62"/><circle cx="569.5" cy="127.5" r="7.44"/><circle cx="586.5" cy="127.5" r="7.30"/><circle cx="603.5" cy="127.5" r="7.21"/><circle cx="620.5" cy="127.5" r="7.17"/><circle cx="637.5" cy="127.5" r="7.18"/><circle cx="654.5" cy="127.5" r="7.25"/><circle cx="671.5" cy="127.5" r="7.36"/><circle cx="688.5" cy="127.5" r="7.52"/><circle cx="705.5" cy="127.5" r="7.71"/><circle cx="722.5" cy="127.5" r="7.92"/><circle cx="739.5" cy="127.5" r="8.14"/><circle cx="756.5" cy="127.5" r="8.37"/><circle cx="773.5" cy="127.5" r="8.58"/><circle cx="790.5" cy="127.5" r="8.78"/><circle cx="807.5" cy="127.5" r="8.95"/><circle cx="824.5" cy="127.5" r="9.08"/><circle cx="841.5" cy="127.5" r="9.18"/><circle cx="858.5" cy="127.5" r="9.18"/><circle cx="875.5" cy="127.5" r="9.18"/><circle cx="892.5" cy="127.5" r="9.18"/><circle cx="909.5" cy="127.5" r="9.18"/><circle cx="926.5" cy="127.5" r="9.08"/><circle cx="943.5" cy="127.5" r="8.94"/><circle cx="960.5" cy="127.5" r="8.77"/><circle cx="977.5" cy="127.5" r="8.57"/><circle cx="994.5" cy="127.5" r="8.35"/><circle cx="1011.5" cy="127.5" r="8.13"/><circle cx="1028.5" cy="127.5" r="7.91"/><circle cx="1045.5" cy="127.5" r="7.70"/><circle cx="1062.5" cy="127.5" r="7.51"/><circle cx="1079.5" cy="127.5" r="7.35"/><circle cx="1096.5" cy="127.5" r="7.24"/><circle cx="1113.5" cy="127.5" r="7.18"/><circle cx="1130.5" cy="127.5" r="7.17"/><circle cx="1147.5" cy="127.5" r="7.21"/><circle cx="1164.5" cy="127.5" r="7.31"/><circle cx="1181.5" cy="127.5" r="7.45"/><circle cx="1198.5" cy="127.5" r="7.63"/><circle cx="1215.5" cy="127.5" r="7.83"/><circle cx="8.5" cy="144.5" r="9.18"/><circle cx="25.5" cy="144.5" r="9.03"/><circle cx="42.5" cy="144.5" r="8.84"/><circle cx="59.5" cy="144.5" r="8.67"/><circle cx="76.5" cy="144.5" r="8.53"/><circle cx="93.5" cy="144.5" r="8.43"/><circle cx="110.5" cy="144.5" r="8.36"/><circle cx="127.5" cy="144.5" r="8.35"/><circle cx="144.5" cy="144.5" r="8.38"/><circle cx="161.5" cy="144.5" r="8.45"/><circle cx="178.5" cy="144.5" r="8.57"/><circle cx="195.5" cy="144.5" r="8.72"/><circle cx="212.5" cy="144.5" r="8.90"/><circle cx="229.5" cy="144.5" r="9.09"/><circle cx="246.5" cy="144.5" r="9.18"/><circle cx="263.5" cy="144.5" r="9.18"/><circle cx="280.5" cy="144.5" r="9.18"/><circle cx="297.5" cy="144.5" r="9.18"/><circle cx="314.5" cy="144.5" r="9.18"/><circle cx="331.5" cy="144.5" r="9.18"/><circle cx="348.5" cy="144.5" r="9.18"/><circle cx="365.5" cy="144.5" r="9.18"/><circle cx="382.5" cy="144.5" r="9.18"/><circle cx="399.5" cy="144.5" r="9.18"/><circle cx="416.5" cy="144.5" r="9.18"/><circle cx="433.5" cy="144.5" r="9.18"/><circle cx="450.5" cy="144.5" r="9.18"/><circle cx="467.5" cy="144.5" r="9.18"/><circle cx="484.5" cy="144.5" r="9.18"/><circle cx="501.5" cy="144.5" r="9.18"/><circle cx="518.5" cy="144.5" r="9.11"/><circle cx="535.5" cy="144.5" r="8.92"/><circle cx="552.5" cy="144.5" r="8.74"/><circle cx="569.5" cy="144.5" r="8.59"/><circle cx="586.5" cy="144.5" r="8.47"/><circle cx="603.5" cy="144.5" r="8.39"/><circle cx="620.5" cy="144.5" r="8.35"/><circle cx="637.5" cy="144.5" r="8.36"/><circle cx="654.5" cy="144.5" r="8.42"/><circle cx="671.5" cy="144.5" r="8.52"/><circle cx="688.5" cy="144.5" r="8.65"/><circle cx="705.5" cy="144.5" r="8.82"/><circle cx="722.5" cy="144.5" r="9.01"/><circle cx="739.5" cy="144.5" r="9.18"/><circle cx="756.5" cy="144.5" r="9.18"/><circle cx="773.5" cy="144.5" r="9.18"/><circle cx="790.5" cy="144.5" r="9.18"/><circle cx="807.5" cy="144.5" r="9.18"/><circle cx="824.5" cy="144.5" r="9.18"/><circle cx="841.5" cy="144.5" r="9.18"/><circle cx="858.5" cy="144.5" r="9.18"/><circle cx="875.5" cy="144.5" r="9.18"/><circle cx="892.5" cy="144.5" r="9.18"/><circle cx="909.5" cy="144.5" r="9.18"/><circle cx="926.5" cy="144.5" r="9.18"/><circle cx="943.5" cy="144.5" r="9.18"/><circle cx="960.5" cy="144.5" r="9.18"/><circle cx="977.5" cy="144.5" r="9.18"/><circle cx="994.5" cy="144.5" r="9.18"/><circle cx="1011.5" cy="144.5" r="9.18"/><circle cx="1028.5" cy="144.5" r="9.00"/><circle cx="1045.5" cy="144.5" r="8.81"/><circle cx="1062.5" cy="144.5" r="8.65"/><circle cx="1079.5" cy="144.5" r="8.51"/><circle cx="1096.5" cy="144.5" r="8.41"/><circle cx="1113.5" cy="144.5" r="8.36"/><circle cx="1130.5" cy="144.5" r="8.35"/><circle cx="1147.5" cy="144.5" r="8.39"/><circle cx="1164.5" cy="144.5" r="8.47"/><circle cx="1181.5" cy="144.5" r="8.59"/><circle cx="1198.5" cy="144.5" r="8.75"/><circle cx="1215.5" cy="144.5" r="8.93"/><circle cx="8.5" cy="161.5" r="9.18"/><circle cx="25.5" cy="161.5" r="9.18"/><circle cx="42.5" cy="161.5" r="9.18"/><circle cx="59.5" cy="161.5" r="9.18"/><circle cx="76.5" cy="161.5" r="9.18"/><circle cx="93.5" cy="161.5" r="9.18"/><circle cx="110.5" cy="161.5" r="9.18"/><circle cx="127.5" cy="161.5" r="9.18"/><circle cx="144.5" cy="161.5" r="9.18"/><circle cx="161.5" cy="161.5" r="9.18"/><circle cx="178.5" cy="161.5" r="9.18"/><circle cx="195.5" cy="161.5" r="9.18"/><circle cx="212.5" cy="161.5" r="9.18"/><circle cx="229.5" cy="161.5" r="9.18"/><circle cx="246.5" cy="161.5" r="9.18"/><circle cx="263.5" cy="161.5" r="9.18"/><circle cx="280.5" cy="161.5" r="9.18"/><circle cx="297.5" cy="161.5" r="9.18"/><circle cx="314.5" cy="161.5" r="9.18"/><circle cx="331.5" cy="161.5" r="9.18"/><circle cx="348.5" cy="161.5" r="9.18"/><circle cx="365.5" cy="161.5" r="9.18"/><circle cx="382.5" cy="161.5" r="9.18"/><circle cx="399.5" cy="161.5" r="9.18"/><circle cx="416.5" cy="161.5" r="9.18"/><circle cx="433.5" cy="161.5" r="9.18"/><circle cx="450.5" cy="161.5" r="9.18"/><circle cx="467.5" cy="161.5" r="9.18"/><circle cx="484.5" cy="161.5" r="9.18"/><circle cx="501.5" cy="161.5" r="9.18"/><circle cx="518.5" cy="161.5" r="9.18"/><circle cx="535.5" cy="161.5" r="9.18"/><circle cx="552.5" cy="161.5" r="9.18"/><circle cx="569.5" cy="161.5" r="9.18"/><circle cx="586.5" cy="161.5" r="9.18"/><circle cx="603.5" cy="161.5" r="9.18"/><circle cx="620.5" cy="161.5" r="9.18"/><circle cx="637.5" cy="161.5" r="9.18"/><circle cx="654.5" cy="161.5" r="9.18"/><circle cx="671.5" cy="161.5" r="9.18"/><circle cx="688.5" cy="161.5" r="9.18"/><circle cx="705.5" cy="161.5" r="9.18"/><circle cx="722.5" cy="161.5" r="9.18"/><circle cx="739.5" cy="161.5" r="9.18"/><circle cx="756.5" cy="161.5" r="9.18"/><circle cx="773.5" cy="161.5" r="9.18"/><circle cx="790.5" cy="161.5" r="9.18"/><circle cx="807.5" cy="161.5" r="9.18"/><circle cx="824.5" cy="161.5" r="9.18"/><circle cx="841.5" cy="161.5" r="9.18"/><circle cx="858.5" cy="161.5" r="9.18"/><circle cx="875.5" cy="161.5" r="9.18"/><circle cx="892.5" cy="161.5" r="9.18"/><circle cx="909.5" cy="161.5" r="9.18"/><circle cx="926.5" cy="161.5" r="9.18"/><circle cx="943.5" cy="161.5" r="9.18"/><circle cx="960.5" cy="161.5" r="9.18"/><circle cx="977.5" cy="161.5" r="9.18"/><circle cx="994.5" cy="161.5" r="9.18"/><circle cx="1011.5" cy="161.5" r="9.18"/><circle cx="1028.5" cy="161.5" r="9.18"/><circle cx="1045.5" cy="161.5" r="9.18"/><circle cx="1062.5" cy="161.5" r="9.18"/><circle cx="1079.5" cy="161.5" r="9.18"/><circle cx="1096.5" cy="161.5" r="9.18"/><circle cx="1113.5" cy="161.5" r="9.18"/><circle cx="1130.5" cy="161.5" r="9.18"/><circle cx="1147.5" cy="161.5" r="9.18"/><circle cx="1164.5" cy="161.5" r="9.18"/><circle cx="1181.5" cy="161.5" r="9.18"/><circle cx="1198.5" cy="161.5" r="9.18"/><circle cx="1215.5" cy="161.5" r="9.18"/></g></svg></div>
+
+  <footer id="hubungi">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">Maam's Delight</div>
+          <div class="footer-tag">"Setiap kotak, diikat dengan citarasa."</div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h5>Koleksi</h5>
+            <a href="#founder">Kenali Maam</a>
+            <a href="#bark">Choc Bark Series</a>
+            <a href="#hantaran">Siri Hadiahan</a>
+            <a href="#dates">Dipped Dates</a>
+            <a href="#kelas">Kelas Coklat</a>
+          </div>
+          <div class="footer-col">
+            <h5>Hubungi</h5>
+            <a href="https://wa.me/601120723156" target="_blank" rel="noopener">011-2072 3156</a>
+            <a href="https://instagram.com/maamsdelight" target="_blank" rel="noopener">@maamsdelight</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Maam's Delight. Coklat tempahan buatan tangan.</span>
+        <span>Dibuat dengan ♡ untuk pencinta coklat.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/601120723156?text=Hai%20Maam's%20Delight!%20Saya%20berminat%20nak%20tempah%20coklat." target="_blank" rel="noopener" aria-label="WhatsApp Maam's Delight">
+    <span class="wa-pulse" aria-hidden="true"></span>
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.48 1.34 5L2 22l5.2-1.36a9.94 9.94 0 0 0 4.84 1.24h.01c5.5 0 9.96-4.46 9.96-9.96C22 6.46 17.54 2 12.04 2Zm0 18.2h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.09.81.82-3-.2-.31a8.22 8.22 0 0 1-1.26-4.4c0-4.55 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.55-3.7 8.22-8.26 8.22Zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.4-.12-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.66-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08s.89 2.41 1.02 2.58c.12.17 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28Z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-inner">
+      <img id="lightboxImg" src="" alt="" />
+      <div class="lightbox-cap" id="lightboxCap"></div>
+      <button class="lightbox-close" id="lightboxClose">Tutup</button>
+    </div>
+  </div>
+
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---- nav scroll state ---- */
+  var nav = document.getElementById('siteNav');
+  function onScroll(){
+    if(window.scrollY > 40){ nav.classList.add('scrolled'); }
+    else{ nav.classList.remove('scrolled'); }
+  }
+  document.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  /* ---- mobile nav menu ---- */
+  var navBurger = document.getElementById('navBurger');
+  var navPanel = document.getElementById('navLinksPanel');
+  function closeNavPanel(){
+    navPanel.classList.remove('open');
+    navBurger.setAttribute('aria-expanded', 'false');
+  }
+  navBurger.addEventListener('click', function(){
+    var isOpen = navPanel.classList.toggle('open');
+    navBurger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  navPanel.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', closeNavPanel);
+  });
+  document.addEventListener('click', function(e){
+    if(navPanel.classList.contains('open') && !e.target.closest('.nav-inner') && !e.target.closest('.nav-links-panel')){
+      closeNavPanel();
+    }
+  });
+
+  /* ---- reveal on scroll ---- */
+  var revealEls = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window && !prefersReduced){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  /* ---- flavour picker ---- */
+  var selected = [];
+  var fsList = document.getElementById('fsList');
+  var fsEmpty = document.getElementById('fsEmpty');
+  var fsSend = document.getElementById('fsSend');
+  var BASE_WA = "https://wa.me/601120723156?text=";
+
+  function renderSummary(){
+    fsList.innerHTML = '';
+    if(selected.length === 0){
+      fsList.appendChild(fsEmpty);
+      fsSend.href = BASE_WA + encodeURIComponent("Hai Maam's Delight! Saya nak tempah Choc Bark.");
+      return;
+    }
+    selected.forEach(function(name){
+      var pill = document.createElement('span');
+      pill.className = 'fs-pill';
+      pill.textContent = name;
+      fsList.appendChild(pill);
+    });
+    var msg = "Hai Maam's Delight! Saya nak tempah Choc Bark dengan perisa: " + selected.join(', ') + ".";
+    fsSend.href = BASE_WA + encodeURIComponent(msg);
+  }
+
+  // Delegated (not bound per-chip) so chips added later via Edit Mode's
+  // "+ Tambah" also work without any extra wiring.
+  document.addEventListener('click', function(e){
+    var chip = e.target.closest('.flavour-chip');
+    if(!chip) return;
+    var name = chip.getAttribute('data-flavour');
+    var idx = selected.indexOf(name);
+    if(idx > -1){
+      selected.splice(idx, 1);
+      chip.classList.remove('selected');
+    } else {
+      selected.push(name);
+      chip.classList.add('selected');
+    }
+    renderSummary();
+  });
+  renderSummary();
+
+  /* ---- gifting series data + tabs ---- */
+  var GIFTS = [
+    {img:"images/photo-17.jpg", cat:["majlis"], name:"Crack-It Choc Shell", desc:"Kelopak coklat berbentuk hati yang anda 'crack' untuk dedah isian dalam — momen kejutan yang manis untuk ulang tahun atau 'just because'."},
+    {img:"images/photo-18.jpg", cat:["majlis"], name:"Choc Bouquet", desc:"Coklat dan bunga kering disusun anggun dalam vas — ganti bunga biasa dengan hadiah yang boleh dimakan."},
+    {img:"images/photo-19.jpg", cat:["majlis","hantaran"], name:'"La Vie en Rose" Choc Dipped Dates', desc:"Kotak kurma berlapik coklat diikat reben satin, siap dengan kad ucapan — popular untuk raya, hantaran atau hadiah 'thank you'."},
+    {img:"images/photo-20.jpg", cat:["korporat"], name:"Corporate Gift Box", desc:"Kotak hadiah bercorak elegan, sesuai untuk pakej raya, bonus pelanggan atau cenderahati syarikat — boleh disesuaikan dengan jenama anda."},
+    {img:"images/photo-21.jpg", cat:["korporat"], name:"Party Packs", desc:"Pek parti choc bark berlapis, dibungkus kemas dengan kad nama — pilihan manis untuk hadiah guru, goodie bag atau majlis sekolah."},
+    {img:"images/photo-22.jpg", cat:["majlis"], name:"Choc Dipped Strawberry Bouquet", desc:"Strawberi berlapik coklat disusun sebagai buket bersama bunga — kombinasi manis untuk hari jadi, baby shower atau hadiah spontan."},
+    {img:"images/photo-23.jpg", cat:["hantaran"], name:'Choc "Gold Bar" Dowry', desc:"Coklat berbentuk jongkong emas disusun dalam kotak akrilik berhias orkid — pilihan mewah untuk dulang hantaran perkahwinan &amp; pertunangan."}
+  ];
+
+  function cardHTML(g){
+    return '<div class="p-card" data-lightbox data-img="'+g.img+'" data-cap="'+g.name.replace(/"/g,'&quot;')+'">'
+      + '<div class="p-img"><img src="'+g.img+'" alt="'+g.name.replace(/"/g,'&quot;')+'" loading="lazy" /></div>'
+      + '<div class="p-body"><h4>'+g.name+'</h4><p>'+g.desc+'</p></div>'
+      + '</div>';
+  }
+
+  document.getElementById('giftGridAll').innerHTML = GIFTS.map(cardHTML).join('');
+  document.getElementById('giftGridMajlis').innerHTML = GIFTS.filter(function(g){return g.cat.indexOf('majlis')>-1;}).map(cardHTML).join('');
+  document.getElementById('giftGridKorporat').innerHTML = GIFTS.filter(function(g){return g.cat.indexOf('korporat')>-1;}).map(cardHTML).join('');
+  document.getElementById('giftGridHantaran').innerHTML = GIFTS.filter(function(g){return g.cat.indexOf('hantaran')>-1;}).map(cardHTML).join('');
+
+  var tabBtns = document.querySelectorAll('.tab-btn');
+  var panels = document.querySelectorAll('.tab-panel');
+  tabBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      tabBtns.forEach(function(b){ b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+      btn.classList.add('active'); btn.setAttribute('aria-selected','true');
+      var target = btn.getAttribute('data-tab');
+      panels.forEach(function(p){
+        p.classList.toggle('active', p.getAttribute('data-panel') === target);
+      });
+    });
+  });
+
+  /* ---- dates tiers ---- */
+  var TIERS = [
+    {img:"images/photo-24.jpg", name:"Trio Treat", pcs:"3 keping / kotak", desc:"3 perisa pilihan anda. Reben &amp; pelekat tambahan atas permintaan."},
+    {img:"images/photo-25.jpg", name:"Bliss Six", pcs:"6 keping / kotak", desc:"6 perisa pilihan — saiz manis untuk hadiah harian."},
+    {img:"images/photo-26.jpg", name:"Heaven Dozen", pcs:"12 keping / kotak", desc:"Pilih sehingga 8 perisa — sesuai untuk hamper pertengahan."},
+    {img:"images/photo-27.jpg", name:"Thirty-Five Treasures", pcs:"35 keping / kotak", desc:"Pilih sehingga 8 perisa, terbuka untuk custom — untuk hantaran &amp; majlis besar."},
+    {img:"images/photo-28.jpg", name:"Single-Ready-to-Mingle", pcs:"Dibungkus berasingan", desc:"Setiap biji kurma dibungkus ikut citarasa anda — pilihan popular untuk door gift kahwin."}
+  ];
+  document.getElementById('tierRow').innerHTML = TIERS.map(function(t){
+    return '<div class="tier-card" data-lightbox data-img="'+t.img+'" data-cap="'+t.name+'">'
+      + '<div class="tier-img"><img src="'+t.img+'" alt="'+t.name+'" loading="lazy" /></div>'
+      + '<div class="tier-body"><div class="tier-name">'+t.name+'</div><div class="tier-pcs">'+t.pcs+'</div><p class="tier-desc">'+t.desc+'</p></div>'
+      + '</div>';
+  }).join('');
+
+  /* ---- lightbox ---- */
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lightboxImg');
+  var lbCap = document.getElementById('lightboxCap');
+  document.addEventListener('click', function(e){
+    var el = e.target.closest('[data-lightbox]');
+    if(el){
+      lbImg.src = el.getAttribute('data-img');
+      lbImg.alt = el.getAttribute('data-cap');
+      lbCap.textContent = el.getAttribute('data-cap');
+      lb.classList.add('open');
+    }
+  });
+  function closeLB(){ lb.classList.remove('open'); lbImg.src=''; }
+  document.getElementById('lightboxClose').addEventListener('click', closeLB);
+  lb.addEventListener('click', function(e){ if(e.target === lb){ closeLB(); } });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ closeLB(); } });
+
+  /* ---- faq accordion ---- */
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var q = item.querySelector('.faq-q');
+    var a = item.querySelector('.faq-a');
+    q.addEventListener('click', function(){
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(other){
+        other.classList.remove('open');
+        other.querySelector('.faq-a').style.maxHeight = null;
+      });
+      if(!isOpen){
+        item.classList.add('open');
+        a.style.maxHeight = a.scrollHeight + 'px';
+      }
+    });
+  });
+
+  /* ---- parallax for occasion cutouts ---- */
+  if(!prefersReduced){
+    var parallaxItems = document.querySelectorAll('.parallax-item');
+    var ticking = false;
+    function updateParallax(){
+      var vh = window.innerHeight;
+      parallaxItems.forEach(function(el){
+        var rect = el.getBoundingClientRect();
+        var center = rect.top + rect.height/2 - vh/2;
+        var speed = parseFloat(el.getAttribute('data-speed')) || 0.05;
+        el.style.transform = 'translateY(' + (-center * speed) + 'px)';
+      });
+      ticking = false;
+    }
+    document.addEventListener('scroll', function(){
+      if(!ticking){ window.requestAnimationFrame(updateParallax); ticking = true; }
+    }, {passive:true});
+    updateParallax();
+  }
+
+})();
+</script>
+
+<script>
+/* ==========================================================================
+   EDIT MODE — only runs when the page is opened with ?edit=1 in the URL.
+   Regular visitors (customers) never see or load any of this UI.
+
+   What it does:
+   - Makes text content directly editable (click text, type).
+   - Lets you swap any picture for your own (click "Tukar Gambar").
+   - Lets you switch the font pairing, including uploading your own font file.
+   - Lets you drag whole sections into a new order.
+   - "Muat Turun Halaman" exports everything as a new standalone HTML file —
+     re-open that file to keep editing it later, or hand it off to be
+     published / imported into Carrd.
+
+   Entry point: a small "✎ Edit" button fixed at the bottom-left of the page,
+   always present. (A URL of ?edit=1 or #edit=1 also auto-opens it, as a
+   bonus shortcut for sharing a direct link — but the button is the reliable
+   way in, since some viewers don't let you edit the address bar.)
+
+   Nothing here is saved automatically anywhere — there is no server. Editing
+   only changes what's in this browser tab until you download.
+   ========================================================================== */
+(function(){
+  "use strict";
+
+  var editModeActive = false;
+
+  /* ---- font pairings ---- */
+  var FONT_PAIRINGS = {
+    playful:{label:"Playful — Baloo 2 + Work Sans", display:"'Baloo 2', system-ui, sans-serif", body:"'Work Sans', system-ui, sans-serif"},
+    elegant:{label:"Elegant — Fraunces + Work Sans", display:"'Fraunces', Georgia, serif", body:"'Work Sans', system-ui, sans-serif"},
+    minimal:{label:"Minimal — Work Sans only", display:"'Work Sans', system-ui, sans-serif", body:"'Work Sans', system-ui, sans-serif"}
+  };
+
+  function applyFontPairing(key){
+    var p = FONT_PAIRINGS[key];
+    if(!p) return;
+    document.documentElement.style.setProperty('--font-display', p.display);
+    document.documentElement.style.setProperty('--font-body', p.body);
+  }
+
+  var customFontCounter = 0;
+  function applyCustomFont(role, dataUrl){
+    customFontCounter += 1;
+    var familyName = 'CustomFont' + customFontCounter;
+    var styleTag = document.getElementById('edit-custom-fonts');
+    if(!styleTag){
+      styleTag = document.createElement('style');
+      styleTag.id = 'edit-custom-fonts';
+      document.head.appendChild(styleTag);
+    }
+    styleTag.appendChild(document.createTextNode(
+      "@font-face{font-family:'" + familyName + "';src:url(" + dataUrl + ");font-weight:100 900;font-style:normal;font-display:swap;}"
+    ));
+    var varName = role === 'display' ? '--font-display' : '--font-body';
+    document.documentElement.style.setProperty(varName, "'" + familyName + "', system-ui, sans-serif");
+  }
+
+  /* ---- text editing ---- */
+  var EDITABLE_SELECTOR = [
+    'h1','h2','h3','h4','.eyebrow','p','.class-points li','.founder-points li','.fc-label',
+    '.tier-name','.tier-pcs','.tier-desc','.occ-name','.occ-desc',
+    '.footer-brand','.footer-tag','.footer-col h5','.footer-col a',
+    '.btn','.nav-links a','.nav-links-panel a','.brand','.fs-hint','.fs-note'
+  ].join(',');
+
+  function enableTextEditing(){
+    document.querySelectorAll(EDITABLE_SELECTOR).forEach(function(el){
+      if(el.closest('.marquee-wrap') || el.closest('#lightbox') || el.closest('.edit-toolbar')) return;
+      el.setAttribute('contenteditable', 'true');
+    });
+  }
+
+  // (Called from activateEditMode(), by which point the gifting/dates cards
+  // are already in the DOM — the main script builds them synchronously,
+  // before this script block runs.)
+
+  // Stop links from navigating away (would lose the edit session) — editing
+  // their text still works since contenteditable caret placement doesn't
+  // depend on the click event completing.
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a');
+    if(a && !e.target.closest('.edit-toolbar')){
+      e.preventDefault();
+    }
+  }, true);
+
+  /* ---- image replace ---- */
+  function fileToDataUrl(file){
+    return new Promise(function(resolve, reject){
+      var reader = new FileReader();
+      reader.onload = function(){ resolve(reader.result); };
+      reader.onerror = reject;
+      reader.readAsDataURL(file);
+    });
+  }
+
+  function enableImageReplace(){
+    document.querySelectorAll('img').forEach(function(img){
+      if(img.closest('.edit-toolbar') || img.id === 'lightboxImg' || img.dataset.editSwapReady) return;
+      img.dataset.editSwapReady = '1';
+
+      var host = img.parentElement;
+      host.classList.add('edit-img-host');
+
+      var swap = document.createElement('span');
+      swap.className = 'edit-img-swap';
+      swap.setAttribute('role', 'button');
+      swap.setAttribute('tabindex', '0');
+      swap.textContent = '🖼 Tukar Gambar';
+
+      var input = document.createElement('input');
+      input.type = 'file';
+      input.accept = 'image/*';
+      input.addEventListener('change', function(){
+        var file = input.files && input.files[0];
+        if(!file) return;
+        fileToDataUrl(file).then(function(dataUrl){
+          img.src = dataUrl;
+          // keep the lightbox (which reads data-img, not the <img> itself) in sync
+          var card = img.closest('[data-lightbox]');
+          if(card){ card.setAttribute('data-img', dataUrl); }
+        });
+      });
+
+      function trigger(e){
+        e.preventDefault();
+        e.stopPropagation();
+        input.click();
+      }
+      swap.addEventListener('click', trigger);
+      swap.addEventListener('keydown', function(e){
+        if(e.key === 'Enter' || e.key === ' '){ trigger(e); }
+      });
+
+      host.appendChild(swap);
+      host.appendChild(input);
+    });
+  }
+
+  // Keep a flavour chip's underlying data-flavour (used to build the
+  // WhatsApp order message) in sync if its visible label text is edited.
+  document.addEventListener('focusout', function(e){
+    var label = e.target.closest && e.target.closest('.fc-label');
+    if(!label) return;
+    var chip = label.closest('.flavour-chip');
+    if(chip){ chip.dataset.flavour = label.textContent.trim(); }
+  });
+
+  /* ---- drag-reorder items within a single grid (flavours / gift cards / tiers) ---- */
+  function makeSortableGrid(container, itemSelector){
+    if(!container) return;
+    var items = Array.prototype.slice.call(container.children).filter(function(el){
+      return el.matches(itemSelector) && !el.dataset.editSortReady;
+    });
+
+    items.forEach(function(item){
+      item.dataset.editSortReady = '1';
+      item.classList.add('edit-sortable-item');
+
+      var handle = document.createElement('span');
+      handle.className = 'edit-card-handle';
+      handle.setAttribute('role', 'button');
+      handle.setAttribute('tabindex', '0');
+      handle.title = 'Seret untuk susun semula';
+      handle.textContent = '⠿';
+      item.appendChild(handle);
+
+      var dragging = false;
+
+      handle.addEventListener('pointerdown', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        dragging = true;
+        item.classList.add('edit-dragging');
+        try{ handle.setPointerCapture(e.pointerId); }catch(err){}
+      });
+      // pointerdown.stopPropagation() doesn't stop the click event that
+      // follows it — without this, grabbing the handle on a flavour chip or
+      // gift card would also trigger that card's own click behaviour
+      // (select flavour / open lightbox).
+      handle.addEventListener('click', function(e){ e.stopPropagation(); });
+
+      handle.addEventListener('pointermove', function(e){
+        if(!dragging) return;
+        var siblings = Array.prototype.slice.call(container.children).filter(function(el){
+          return el.matches(itemSelector) && el !== item;
+        });
+        var x = e.clientX, y = e.clientY;
+        var closest = null, closestDist = Infinity;
+        siblings.forEach(function(sib){
+          var box = sib.getBoundingClientRect();
+          var cx = box.left + box.width / 2, cy = box.top + box.height / 2;
+          var dist = Math.hypot(x - cx, y - cy);
+          if(dist < closestDist){ closestDist = dist; closest = sib; }
+        });
+        if(closest){
+          var box = closest.getBoundingClientRect();
+          var before = x < box.left + box.width / 2;
+          container.insertBefore(item, before ? closest : closest.nextSibling);
+        }
+      });
+
+      handle.addEventListener('pointerup', function(){
+        dragging = false;
+        item.classList.remove('edit-dragging');
+      });
+
+      // basic keyboard reordering (accessible alternative to dragging)
+      handle.addEventListener('keydown', function(e){
+        if(e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+        e.preventDefault();
+        var sib = e.key === 'ArrowLeft' ? item.previousElementSibling : item.nextElementSibling;
+        if(!sib || !sib.matches(itemSelector)) return;
+        if(e.key === 'ArrowLeft'){ container.insertBefore(item, sib); }
+        else { container.insertBefore(sib, item); }
+        handle.focus();
+      });
+    });
+  }
+
+  /* ---- add new items (flavours / gift cards / tiers) ---- */
+  var PLACEHOLDER_IMG = 'data:image/svg+xml;utf8,' + encodeURIComponent(
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">' +
+    '<rect width="200" height="200" fill="#FFEFCF"/>' +
+    '<rect x="4" y="4" width="192" height="192" fill="none" stroke="#E2860A" stroke-width="3" stroke-dasharray="9 9"/>' +
+    '<text x="100" y="106" font-family="sans-serif" font-size="15" fill="#7C5C44" text-anchor="middle">+ Gambar</text>' +
+    '</svg>'
+  );
+
+  var ITEM_TEMPLATES = {
+    flavour: function(){
+      var btn = document.createElement('button');
+      btn.className = 'flavour-chip';
+      btn.dataset.flavour = 'Perisa Baru';
+      btn.innerHTML =
+        '<img src="' + PLACEHOLDER_IMG + '" alt="Perisa baru" />' +
+        '<span class="fc-check">✓</span>' +
+        '<span class="fc-label">Perisa Baru</span>';
+      return btn;
+    },
+    card: function(){
+      var div = document.createElement('div');
+      div.className = 'p-card';
+      div.setAttribute('data-lightbox', '');
+      div.setAttribute('data-img', PLACEHOLDER_IMG);
+      div.setAttribute('data-cap', 'Produk Baru');
+      div.innerHTML =
+        '<div class="p-img"><img src="' + PLACEHOLDER_IMG + '" alt="Produk baru" /></div>' +
+        '<div class="p-body"><h4>Produk Baru</h4><p>Penerangan produk di sini — klik untuk tukar.</p></div>';
+      return div;
+    },
+    tier: function(){
+      var div = document.createElement('div');
+      div.className = 'tier-card';
+      div.setAttribute('data-lightbox', '');
+      div.setAttribute('data-img', PLACEHOLDER_IMG);
+      div.setAttribute('data-cap', 'Pakej Baru');
+      div.innerHTML =
+        '<div class="tier-img"><img src="' + PLACEHOLDER_IMG + '" alt="Pakej baru" /></div>' +
+        '<div class="tier-body"><div class="tier-name">Pakej Baru</div><div class="tier-pcs">KETERANGAN</div><p class="tier-desc">Butiran pakej di sini — klik untuk tukar.</p></div>';
+      return div;
+    }
+  };
+
+  function addAddTile(container, kind, sortSelector){
+    if(!container || container.querySelector(':scope > .edit-add-tile')) return;
+    var tile = document.createElement('button');
+    tile.type = 'button';
+    tile.className = 'edit-add-tile' + (kind === 'flavour' ? ' edit-add-tile-square' : '');
+    tile.textContent = '+ Tambah';
+    tile.addEventListener('click', function(){
+      var newItem = ITEM_TEMPLATES[kind]();
+      container.insertBefore(newItem, tile);
+      enableTextEditing();
+      enableImageReplace();
+      makeSortableGrid(container, sortSelector);
+    });
+    container.appendChild(tile);
+  }
+
+  function enableAddAndSortGrids(){
+    makeSortableGrid(document.getElementById('flavourGrid'), '.flavour-chip');
+    addAddTile(document.getElementById('flavourGrid'), 'flavour', '.flavour-chip');
+
+    ['giftGridAll','giftGridMajlis','giftGridKorporat','giftGridHantaran'].forEach(function(id){
+      var grid = document.getElementById(id);
+      makeSortableGrid(grid, '.p-card');
+      addAddTile(grid, 'card', '.p-card');
+    });
+
+    var tierRow = document.getElementById('tierRow');
+    makeSortableGrid(tierRow, '.tier-card');
+    addAddTile(tierRow, 'tier', '.tier-card');
+  }
+
+  /* ---- section reorder ---- */
+  function enableSectionReorder(){
+    var page = document.querySelector('.page');
+    var targets = Array.prototype.slice.call(
+      document.querySelectorAll('#founder, #bark, #hantaran, #dates, #majlis, #kelas, #tempah, .faq')
+    );
+
+    targets.forEach(function(el){
+      el.classList.add('edit-draggable');
+      var handle = document.createElement('div');
+      handle.className = 'edit-drag-handle';
+      handle.textContent = '⠿ Seret untuk susun semula seksyen ini';
+      el.insertBefore(handle, el.firstChild);
+
+      var dragging = false;
+
+      handle.addEventListener('pointerdown', function(e){
+        dragging = true;
+        el.classList.add('edit-dragging');
+        try{ handle.setPointerCapture(e.pointerId); }catch(err){}
+      });
+
+      handle.addEventListener('pointermove', function(e){
+        if(!dragging) return;
+        var y = e.clientY;
+        var after = null, closestOffset = -Infinity;
+        targets.forEach(function(other){
+          if(other === el) return;
+          var box = other.getBoundingClientRect();
+          var offset = y - box.top - box.height / 2;
+          if(offset < 0 && offset > closestOffset){
+            closestOffset = offset;
+            after = other;
+          }
+        });
+        if(after){ page.insertBefore(el, after); }
+        else { page.insertBefore(el, document.querySelector('.wa-float')); }
+      });
+
+      handle.addEventListener('pointerup', function(){
+        dragging = false;
+        el.classList.remove('edit-dragging');
+      });
+    });
+  }
+
+  /* ---- toolbar ---- */
+  function buildToolbar(){
+    if(document.querySelector('.edit-toolbar')) return; // already built, don't duplicate
+
+    var bar = document.createElement('div');
+    bar.className = 'edit-toolbar';
+    bar.innerHTML =
+      '<div class="edit-group">' +
+        '<label for="editFontSelect">Font</label>' +
+        '<select id="editFontSelect">' +
+          '<option value="playful">Playful — Baloo 2 + Work Sans</option>' +
+          '<option value="elegant">Elegant — Fraunces + Work Sans</option>' +
+          '<option value="minimal">Minimal — Work Sans only</option>' +
+        '</select>' +
+      '</div>' +
+      '<div class="edit-group">' +
+        '<button type="button" class="edit-btn" id="editUploadDisplayFontBtn">Muat naik font tajuk</button>' +
+        '<input type="file" id="editUploadDisplayFont" accept=".woff2,.woff,.ttf,.otf" />' +
+        '<button type="button" class="edit-btn" id="editUploadBodyFontBtn">Muat naik font teks</button>' +
+        '<input type="file" id="editUploadBodyFont" accept=".woff2,.woff,.ttf,.otf" />' +
+      '</div>' +
+      '<button type="button" class="edit-btn edit-reset" id="editResetBtn">↺ Reset</button>' +
+      '<button type="button" class="edit-btn" id="editDoneBtn">✓ Selesai</button>' +
+      '<button type="button" class="edit-btn edit-save" id="editSaveBtn">⬇ Muat Turun Halaman</button>' +
+      '<div class="edit-hint">Mod Edit aktif — klik teks untuk tukar, klik gambar untuk tukar gambar. Pemegang besar ⠿ = susun semula seksyen. Pemegang bulat kecil ⠿ atas setiap kad/perisa = susun semula dalam kumpulan yang sama. Tekan "+ Tambah" untuk tambah kad/perisa baru. Nota: kad hadiah yang muncul dalam lebih dari satu tab (Semua + kategori) perlu disusun/ditambah berasingan bagi setiap tab. Bila siap, tekan Muat Turun.</div>';
+
+    document.body.insertBefore(bar, document.body.firstChild);
+
+    bar.querySelector('#editFontSelect').addEventListener('change', function(e){
+      applyFontPairing(e.target.value);
+    });
+
+    function wireFontUpload(buttonId, inputId, role){
+      var btn = bar.querySelector('#' + buttonId);
+      var input = bar.querySelector('#' + inputId);
+      btn.addEventListener('click', function(){ input.click(); });
+      input.addEventListener('change', function(){
+        var file = input.files && input.files[0];
+        if(!file) return;
+        fileToDataUrl(file).then(function(dataUrl){ applyCustomFont(role, dataUrl); });
+      });
+    }
+    wireFontUpload('editUploadDisplayFontBtn', 'editUploadDisplayFont', 'display');
+    wireFontUpload('editUploadBodyFontBtn', 'editUploadBodyFont', 'body');
+
+    bar.querySelector('#editResetBtn').addEventListener('click', function(){
+      if(confirm('Buang semua perubahan yang belum dimuat turun dan mula semula?')){
+        window.location.reload();
+      }
+    });
+
+    bar.querySelector('#editDoneBtn').addEventListener('click', deactivateEditMode);
+    bar.querySelector('#editSaveBtn').addEventListener('click', downloadPage);
+  }
+
+  /* ---- export ---- */
+  function serializePage(){
+    var clone = document.documentElement.cloneNode(true);
+    clone.classList.remove('edit-mode');
+    clone.querySelectorAll('.edit-toolbar, .edit-img-swap, .edit-drag-handle, .edit-card-handle, .edit-add-tile').forEach(function(el){ el.remove(); });
+    clone.querySelectorAll('[contenteditable]').forEach(function(el){ el.removeAttribute('contenteditable'); });
+    clone.querySelectorAll('[data-edit-swap-ready]').forEach(function(el){ el.removeAttribute('data-edit-swap-ready'); });
+    clone.querySelectorAll('[data-edit-sort-ready]').forEach(function(el){ el.removeAttribute('data-edit-sort-ready'); });
+    clone.querySelectorAll('.edit-img-host').forEach(function(el){ el.classList.remove('edit-img-host'); });
+    clone.querySelectorAll('.edit-draggable, .edit-sortable-item').forEach(function(el){ el.classList.remove('edit-draggable', 'edit-dragging', 'edit-sortable-item'); });
+    return '<!doctype html>\n' + clone.outerHTML;
+  }
+
+  async function downloadPage(){
+    var html = serializePage();
+    var filename = 'maams-delight-' + new Date().toISOString().slice(0,10) + '.html';
+
+    if(window.claude && window.claude.downloads){
+      try{
+        await window.claude.downloads.save({filename: filename, data: html});
+        return;
+      }catch(err){
+        if(err && err.code === 'extension_not_enabled'){
+          try{
+            await window.claude.downloads.save({filename: filename.replace(/\.html$/, '.txt'), data: html});
+            alert('Fail disimpan sebagai .txt (sekatan lanjutan pada paparan ini). Tukar nama fail kepada .html selepas muat turun.');
+            return;
+          }catch(err2){ /* fall through to manual fallback below */ }
+        } else if(err && err.code === 'declined'){
+          return; // user said no, don't nag
+        }
+        console.warn('[edit-mode] downloads.save failed, falling back:', err);
+      }
+    }
+
+    // Fallback for contexts where the downloads capability isn't available:
+    // try a plain browser download, then fall back to a copy-paste textarea.
+    try{
+      var blob = new Blob([html], {type:'text/html'});
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url; a.download = filename;
+      document.body.appendChild(a); a.click(); a.remove();
+      URL.revokeObjectURL(url);
+    }catch(err){
+      showManualExport(html);
+    }
+  }
+
+  function showManualExport(html){
+    var overlay = document.createElement('div');
+    overlay.style.cssText = 'position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,0.8);display:flex;align-items:center;justify-content:center;padding:24px;';
+    overlay.innerHTML =
+      '<div style="background:#fff;border-radius:16px;padding:20px;max-width:640px;width:100%;">' +
+        '<p style="font-family:sans-serif;font-size:14px;margin:0 0 10px;">Muat turun automatik tidak tersedia di sini — salin kandungan di bawah dan simpan sebagai fail .html:</p>' +
+        '<textarea readonly style="width:100%;height:280px;font-family:monospace;font-size:11px;" onclick="this.select()"></textarea>' +
+        '<button type="button" style="margin-top:10px;padding:8px 16px;">Tutup</button>' +
+      '</div>';
+    overlay.querySelector('textarea').value = html;
+    overlay.querySelector('button').addEventListener('click', function(){ overlay.remove(); });
+    document.body.appendChild(overlay);
+  }
+
+  /* ---- launcher button (always present, reliable entry point) ---- */
+  function createLauncher(){
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'edit-launcher';
+    btn.textContent = '✎ Edit Halaman Ini';
+    btn.title = 'Edit teks, gambar, font & susunan halaman ini';
+    btn.addEventListener('click', activateEditMode);
+    document.body.appendChild(btn);
+  }
+
+  /* ---- activate / deactivate ---- */
+  function activateEditMode(){
+    if(editModeActive) return;
+    editModeActive = true;
+    document.documentElement.classList.add('edit-mode');
+    buildToolbar();
+    enableTextEditing();
+    enableImageReplace();
+    enableSectionReorder();
+    enableAddAndSortGrids();
+  }
+
+  function deactivateEditMode(){
+    editModeActive = false;
+    document.documentElement.classList.remove('edit-mode');
+    var bar = document.querySelector('.edit-toolbar');
+    if(bar) bar.remove();
+    document.querySelectorAll('[contenteditable]').forEach(function(el){ el.removeAttribute('contenteditable'); });
+    document.querySelectorAll('.edit-img-swap').forEach(function(el){ el.remove(); });
+    document.querySelectorAll('.edit-img-host input[type="file"]').forEach(function(el){ el.remove(); });
+    document.querySelectorAll('.edit-img-host').forEach(function(el){ el.classList.remove('edit-img-host'); });
+    document.querySelectorAll('.edit-drag-handle').forEach(function(el){ el.remove(); });
+    document.querySelectorAll('.edit-draggable').forEach(function(el){ el.classList.remove('edit-draggable', 'edit-dragging'); });
+    document.querySelectorAll('[data-edit-swap-ready]').forEach(function(el){ el.removeAttribute('data-edit-swap-ready'); });
+    document.querySelectorAll('.edit-card-handle').forEach(function(el){ el.remove(); });
+    document.querySelectorAll('.edit-add-tile').forEach(function(el){ el.remove(); });
+    document.querySelectorAll('.edit-sortable-item').forEach(function(el){ el.classList.remove('edit-sortable-item', 'edit-dragging'); });
+    document.querySelectorAll('[data-edit-sort-ready]').forEach(function(el){ el.removeAttribute('data-edit-sort-ready'); });
+  }
+
+  /* ---- init ---- */
+  function init(){
+    createLauncher();
+
+    // Bonus shortcut for direct-link sharing — not required, the button above
+    // always works regardless of whether the viewer lets you edit the URL.
+    var autoOpen = window.location.search.indexOf('edit=1') > -1 ||
+                    window.location.hash.indexOf('edit=1') > -1;
+    if(autoOpen){ activateEditMode(); }
+  }
+
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+
+</body></html>
