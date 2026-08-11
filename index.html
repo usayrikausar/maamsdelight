@@ -1484,10 +1484,12 @@
   // are already in the DOM — the main script builds them synchronously,
   // before this script block runs.)
 
-  // Stop links from navigating away (would lose the edit session) — editing
-  // their text still works since contenteditable caret placement doesn't
-  // depend on the click event completing.
+  // Stop links from navigating away while actively editing (would lose the
+  // edit session) — editing their text still works since contenteditable
+  // caret placement doesn't depend on the click event completing. Must stay
+  // off for regular visitors, or every link on the site breaks.
   document.addEventListener('click', function(e){
+    if(!editModeActive) return;
     var a = e.target.closest('a');
     if(a && !e.target.closest('.edit-toolbar')){
       e.preventDefault();
